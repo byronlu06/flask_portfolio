@@ -41,6 +41,16 @@ def ChaseGreeting():
     # starting and empty input default
     return render_template("ChaseGreeting.html", name="World")
 
+@app.route('/byron/', methods=['GET', 'POST'])
+def byron():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("byron.html", name=name)
+    # starting and empty input default
+    return render_template("byron.html", name="World")
+
 
 # runs the application on the development server
 if __name__ == "__main__":
