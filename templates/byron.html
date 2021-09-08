@@ -11,15 +11,23 @@
                 <input name="name" id="name">
                 <input type="submit" value="Greetings!">
             </form>
+                <!-- Extending the predefined project layout -->
+                {% extends "layouts/base.html" %}
+
+                <!- This variable sets name of browser tab  -->
+                {% set project = "Stubby" %}
+
+                <!- This is a replacement block for Body in base.html -->
+                {% block body %}
+                    <!- Try building a new body here ->
+                    <p>Hi I'm Byron, and I am a student in AP Computer Science Principles</p>
+                {% endblock %}
+
+                <!- This is turning off birds background from base.html -->
+                {% block background %}
+                {% endblock %}
         </div>
         <div class="col-12">
             <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
         </div>
     </div>
-</head>
-</html>
-
-{% extends "layouts/base.html" %}
-
-{% block background %}
-{% endblock %}

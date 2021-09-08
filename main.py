@@ -36,6 +36,17 @@ def Michael():
     # starting and empty input default
     return render_template("Michael.html", name="World")
 
+@app.route('/byron/', methods=['GET', 'POST'])
+def byron():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("byron.html", name=name)
+    # starting and empty input default
+    return render_template("byron.html", name="World")
+
+
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
