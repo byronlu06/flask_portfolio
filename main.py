@@ -46,6 +46,9 @@ def byron():
     # starting and empty input default
     return render_template("byron.html", name="World")
 
+@app.route('/ChaseHomepage/')
+def CHomepage():
+    return render_template("ChaseHomepage.html")
 
 @app.route('/stub/')
 def stub():
