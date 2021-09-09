@@ -53,6 +53,10 @@ def CHomepage():
 def BHomepage():
     return render_template("byronhomepage.html")
 
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
+
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
