@@ -50,6 +50,10 @@ def byron():
 def CHomepage():
     return render_template("ChaseHomepage.html")
 
+@app.route('/byronhomepage/')
+def BHomepage():
+    return render_template("byronhomepage.html")
+
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
