@@ -16,7 +16,6 @@ def index():
 def aboutus():
     return render_template("aboutus.html")
 
-
 @app.route('/Homepages/')
 def HomePages():
     return render_template("Homepages.html")
