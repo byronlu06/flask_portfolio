@@ -11,15 +11,15 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
-def kangaroos():
-    return render_template("kangaroos.html")
+# connects /kangaroos path to render aboutus.html
+@app.route('/aboutus/')
+def aboutus():
+    return render_template("aboutus.html")
 
 
-@app.route('/walruses/')
-def walruses():
-    return render_template("walruses.html")
+@app.route('/Homepages/')
+def HomePages():
+    return render_template("Homepages.html")
 
 
 @app.route('/hawkers/')
@@ -54,15 +54,15 @@ def CHomepage():
 def stub():
     return render_template("stub.html")
 
-@app.route('/ChaseGreeting/', methods=['GET', 'POST'])
+@app.route('/Chase/', methods=['GET', 'POST'])
 def ChaseGreeting():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("ChaseGreeting.html", name=name)
+            return render_template("Chase.html", name=name)
     # starting and empty input default
-    return render_template("ChaseGreeting.html", name="World")
+    return render_template("Chase.html", name="World")
 
 
 # runs the application on the development server
