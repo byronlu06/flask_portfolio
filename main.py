@@ -16,6 +16,9 @@ def index():
 def Minilabs():
     return render_template("Mini Lab Stuff.html")
 
+@app.route('/Test1/')
+def test1():
+    return render_template("test1.html")
 
 # connects /kangaroos path to render aboutus.html
 @app.route('/aboutus/')
