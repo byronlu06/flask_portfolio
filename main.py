@@ -12,6 +12,12 @@ def index():
 
 
 # connects /kangaroos path to render aboutus.html
+@app.route('/Mini Lab Stuff/')
+def Minilabs():
+    return render_template("Mini Lab Stuff.html")
+
+
+# connects /kangaroos path to render aboutus.html
 @app.route('/aboutus/')
 def aboutus():
     return render_template("aboutus.html")
