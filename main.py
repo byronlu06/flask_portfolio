@@ -10,7 +10,6 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-
 # connects /kangaroos path to render aboutus.html
 @app.route('/Mini Lab Stuff/')
 def Minilabs():

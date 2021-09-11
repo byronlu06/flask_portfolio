@@ -13,6 +13,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 {% set youtube = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber" %}
 
 <head>
+    <title> We Love Corn</title>
+    <h1 style="color:black;text-align:center; font-family: 'Arial',serif;" >The Wonders Of Corn</h1>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -32,6 +34,9 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             background-color: var(--grey);
             color: var(--white);
             background-image: url('/static/assets/Cornbackground.jpg');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size: cover;
         }
 
         .dark-mode {
@@ -97,6 +102,42 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             margin: auto;
         }
 
+        .shape{
+            text-align:center;
+            background-color:black;
+            width:900px;
+            height:10px;
+            line-height:60px;
+            color:white;
+            margin:20px auto;
+            position:relative;
+        }
+        .shape2{
+            text-align:center;
+            background-color:black;
+            width:50px;
+            height:50px;
+            line-height:50px;
+            color:black;
+            margin:20px auto;
+            position:relative;
+            transform: rotate(45deg);
+            left: 450px ;
+            top: -50px;
+        }
+        .shape3{
+            text-align:center;
+            background-color:black;
+            width:50px;
+            height:50px;
+            line-height:50px;
+            color:black;
+            margin:20px auto;
+            position:relative;
+            transform: rotate(45deg);
+            left: -459px ;
+            top: -120px;
+        }
     </style>
 
     <title>{{ name }} | {{ project }} </title>
@@ -104,9 +145,22 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 </head>
 
 <body>
+<div class="shape">
+
+</div>
+<div class="shape2">
+</div>
+
+</div>
+<div class="shape3">
+</div>
+
+
 {% include "layouts/navbar.html" %}
 
-    <div class="product" style="margin-top: 2%;">
+
+
+<div class="product" style="margin-top: 2%;">
         <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
 
             <div class="col-8" >
