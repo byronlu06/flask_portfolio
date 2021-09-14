@@ -34,18 +34,17 @@
         // setter for DOM values
         function setConversions(binary) {
             document.getElementById('binary').innerHTML = binary;
-            // DOM assignment to Octal conversion
+            // DOM assignment to octal conversion
             document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
             // DOM assignment to Hexadecimal conversion
             document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
             // DOM assignment to Decimal conversion
             document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
-            // DOM Assignment to ASCII conversion
-            document.getElementById('ASCII').innerHTML = String.fromCharCode(parseInt(binary, 2));
                 /* Hack: show ASCII printable character(s) for each 8 bits
                  DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
                  below ASCII for more ideas of where to make changes
                  */
+            document.getElementById('ASCII').innerHTML = String.fromCharCode(parseInt(binary, 2));
         }
 
         // algorithm to convert decimal to base using division and remainder
@@ -129,8 +128,8 @@
                         <th>Octal</th>
                         <th>Hexadecimal</th>
                         <th>Decimal</th>
-                        <th>ASCII</th>
                         <!-- Hack: display ASCII label for printable character(s)  -->
+                        <th>ASCII</th>
                         <th>Minus</th>
                     </tr>
                     <tr>

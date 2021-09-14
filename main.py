@@ -61,9 +61,9 @@ def CHomepage():
 def BHomepage():
     return render_template("byronhomepage.html")
 
-@app.route('/Chasebinary/')
-def chasebinary():
-    return render_template("ChaseBinary.html")
+@app.route('/binary/')
+def binary():
+    return render_template("Binary.html")
 
 @app.route('/layout/')
 def layout():
