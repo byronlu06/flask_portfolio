@@ -10,27 +10,36 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
             <a class="nav-link" href={{ url_for('index') }}>Portfolio</a>
-            <a class="nav-link" href={{ url_for('aboutus') }}>About Us</a>
-            <a class="nav-link" href={{ url_for('HomePages') }}>HomePages</a>
-            <a class="nav-link" href={{ url_for('hawkers') }}>Hawkers</a>
-            <a class="nav-link" href={{ url_for('binary') }}>Binary</a>
-            <a class="nav-link" href={{ url_for('Minilabs') }}>Mini Labs Stuff</a>
-            <a class="nav-link" href={{ url_for('test1') }}>Test1</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    About Us
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="ChaseHomepage.html">Chase</a>
+                    <a class="dropdown-item" href="/templates/byron.html">Byron</a>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Mini Projects
+                </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="base.html">Video Project</a>
+                <a class="dropdown-item" href="navbar.html">Greeting</a>
+                <a class="dropdown-item" href="project.html">Binary Project</a>
+            </div>
+            </li>
             <!-- stub is shown using the name of the route -->
-        </div>
+
     </div>
 </nav>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="nav navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarSupportedContent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About Us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarSupportedContent">
-                <a class="dropdown-item" href="https://portfolio.nighthawkcodingsociety.com/">Flask Portfolio</a>
-                <a class="dropdown-item" href={{ url_for('byron') }}>Byron</a>
-                <a class="dropdown-item" href={{ url_for('chase') }}>Chase</a>
-            </div>
-        </li>
-    </ul>
-</div>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
