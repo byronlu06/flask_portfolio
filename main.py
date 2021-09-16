@@ -63,7 +63,17 @@ def BHomepage():
 
 @app.route('/binary/')
 def binary():
-    return render_template("Binary.html")
+    BITS = 8
+    imgbulbOn = "/static/assets/bulb_on.jpg"
+    if request.method == 'Post':
+        BITS = int(request.form['BITS'])
+        imgbulbOn = request.form['lighton']
+    return render_template("Binary.html", imgbulbOn = imgbulbOn, BITS=BITS)
+
+@app.route('/binary2/')
+def binary2():
+    return render_template("Binary2.html")
+
 
 @app.route('/layout/')
 def layout():

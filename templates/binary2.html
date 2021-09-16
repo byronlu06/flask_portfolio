@@ -22,9 +22,6 @@
 {% block meta %}
     <title>Binary page</title>
     <script>
-          function myFunction() {
-
-        }
 
         const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
         // return string with current value of each bit
@@ -125,11 +122,6 @@
     <div class="container">
         <div class="row justify-content-md-center">
 
-            <div class="col-12">
-                <form action="/binary/" id="binary" method="POST" >
-                    <label for="name">Input a number</label>
-                    <input name="name" id="name">
-                    <input type="submit" value="Press this">
 
             <p id="demo"></p>
             <div class="col-8">
@@ -178,8 +170,8 @@
                     </tr>
                 </table>
             </div>
-
+            <button onclick="myFunction()" src="binary2">Click me</button>
+            <p id="Change The Page"></p>
         </div>
-
     </div>
 {% endblock %}
