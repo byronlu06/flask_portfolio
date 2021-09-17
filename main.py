@@ -10,19 +10,23 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
 # connects /kangaroos path to render aboutus.html
 @app.route('/Mini Lab Stuff/')
 def Minilabs():
     return render_template("Mini Lab Stuff.html")
 
+
 @app.route('/Test1/')
 def test1():
     return render_template("test1.html")
+
 
 # connects /kangaroos path to render aboutus.html
 @app.route('/aboutus/')
 def aboutus():
     return render_template("aboutus.html")
+
 
 @app.route('/Homepages/')
 def HomePages():
@@ -32,6 +36,7 @@ def HomePages():
 @app.route('/hawkers/')
 def hawkers():
     return render_template("hawkers.html")
+
 
 @app.route('/Michael/', methods=['GET', 'POST'])
 def Michael():
@@ -43,6 +48,7 @@ def Michael():
     # starting and empty input default
     return render_template("Michael.html", name="World")
 
+
 @app.route('/byron/', methods=['GET', 'POST'])
 def byron():
     # submit button has been pushed
@@ -53,22 +59,25 @@ def byron():
     # starting and empty input default
     return render_template("byron.html", name="World")
 
+
 @app.route('/ChaseHomepage/')
 def CHomepage():
     return render_template("ChaseHomepage.html")
+
 
 @app.route('/byronhomepage/')
 def BHomepage():
     return render_template("byronhomepage.html")
 
-@app.route('/binary/')
+
+@app.route('/binary/', methods=['GET', 'POST'])
 def binary():
-    BITS = 8
-    imgbulbOn = "/static/assets/bulb_on.jpg"
-    if request.method == 'Post':
-        BITS = int(request.form['BITS'])
-        imgbulbOn = request.form['lighton']
-    return render_template("Binary.html", imgbulbOn = imgbulbOn, BITS=BITS)
+    if request.form:
+        bits = request.form.get("bits")
+        if len(bits) != 0:  # input field has content
+            return render_template("Binary.html", BITS=int(bits))
+    return render_template("Binary.html", BITS=8)
+
 
 @app.route('/binary2/')
 def binary2():
@@ -79,9 +88,11 @@ def binary2():
 def layout():
     return render_template("layout.html")
 
+
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
+
 
 @app.route('/Chase/', methods=['GET', 'POST'])
 def ChaseGreeting():

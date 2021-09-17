@@ -8,7 +8,6 @@
            use HTML Input Form in Frontend, ie toward top of Page
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
-{% set BITS = 8 %}
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
@@ -125,12 +124,6 @@
     <div class="container">
         <div class="row justify-content-md-center">
 
-            <div class="col-12">
-                <form action="/binary/" id="binary" method="POST" >
-                    <label for="name">Input a number</label>
-                    <input name="name" id="name">
-                    <input type="submit" value="Press this">
-
             <p id="demo"></p>
             <div class="col-8">
                 <table class="table">
@@ -162,6 +155,7 @@
                 </table>
             </div>
 
+
             <div class="col-12">
                 <table class="table">
                     <tr>
@@ -178,6 +172,11 @@
                     </tr>
                 </table>
             </div>
+            <div class="col-12">
+                <form action="/binary/" id="binary" method="POST" >
+                    <label for="name">Input a number</label>
+                    <input type="number" name="bits" id="bits">
+                    <input type="submit" value="Change # of bulbs">
 
         </div>
 
