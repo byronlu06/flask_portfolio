@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
         <div class="col-12">
@@ -11,22 +10,23 @@
                 <label for="name">Type a greeting name?</label>
                 <input name="name" id="name">
                 <input type="submit" value="Greetings!">
+                <p>Hi I'm Byron, and I am a sophomore in AP Computer Science Principles. I like playing soccer and chess, and I also enjoy watching YouTube and Netflix.</p>
+                <p> This is my AP CSP Journal link</p>
+                <a href="https://docs.google.com/document/d/1hiMOqhQTmJGTgKJEy1R_7JWktAQJBVpXeyeKn1s1P54/edit" target="_blank">Journal</a>
+                <img width=300  src="">
             </form>
-                <!-- Extending the predefined project layout -->
+            <!-- Extending the predefined project layout -->
             {% extends "layouts/basehomepage.html" %}
 
-                <!- This variable sets name of browser tab  -->
+            <!- This is a replacement block for Body in base.html -->
+            {% block body %}
+                <!- Try building a new body here ->
+                <p>Hi I'm Chase, and I am a student in AP Computer Science Principles. I like Guitars and Videogames. I am a sophmore.</p>
+            {% endblock %}
 
-
-                <!- This is a replacement block for Body in base.html -->
-                {% block body %}
-                    <!- Try building a new body here ->
-                    <p>Hi I'm Byron, and I am a sophomore in AP Computer Science Principles. I play soccer and chess, and I also enjoy watching YouTube and Netflix.</p>
-                {% endblock %}
-
-                <!- This is turning off birds background from base.html -->
-                {% block background %}
-                {% endblock %}
+            <!- This is turning off birds background from base.html -->
+            {% block background %}
+            {% endblock %}
         </div>
         <div class="col-12">
             <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
