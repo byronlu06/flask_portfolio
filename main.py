@@ -1,6 +1,8 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
 from image import image_data
+from pathlib import Path
+
 
 # create a Flask instance
 app = Flask(__name__)
@@ -111,8 +113,8 @@ def ChaseGreeting():
 
 @app.route('/rgb/')
 def rgb():
-    return render_template('rgb.html', images=image_data())
-
+    path = Path(app.root_path) / "static" / "img"
+    return render_template('rgb.html', images=image_data(path))
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)

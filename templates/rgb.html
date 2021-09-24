@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-{% extends "layout.html" %}
+{% extends "layoutrgb.html" %}
 
 {% block meta %}
     <script>
         // Hack: add java script function to toggle image from original to gray and back (toggle)
+        document.getElementById("img<n>").src
+        document.getElementID("img_gray<n>").innerHTML
+
         //  document.getElementById("img<n>").src
         //  document.getElementID("img_gray<n>").innerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
@@ -42,6 +45,11 @@
                             -->
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
+                            <button onclick >
+
+                            </button>
+
+
                         </td>
                         <td>
                             <div class="overflow-auto" style="height: 256px">
