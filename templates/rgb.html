@@ -13,7 +13,7 @@
 
 {% block content %}
     <head>
-        <title>The Daily Bugle</title>
+        <title>Corn Kinda Pog</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -22,7 +22,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
-    <h1 class="text-center">RGB values within an Image</h1>
+    <h1 class="text-center">RGB Values in image </h1>
     <div class="container">
         <div class="row justify-content-md-center">
             <table class="table">
@@ -51,11 +51,11 @@
                                {{image.base64}}  original image
                                {{image.base64_GRAY}}  gray scale image
                             -->
-                            <button onclick = "GFG_Fun()">Gray Scale</button>
+                            <button onclick = "Greyscalez()">Gray Scale</button>
                             <script>
 
                                 let grayscale = 0
-                                function GFG_Fun() {
+                                function Greyscalez() {
                                     if (grayscale === 0 ) {
                                         document.body.style.filter = "grayscale(100%)";
                                         grayscale = 100
@@ -67,12 +67,12 @@
 
                             </script>
 
-                            <button onclick = "rotateImg()">Rotate 180°</button>
+                            <button onclick = "rotateImg()">Rotate 45°</button>
                             <script>
                                 let rotation = 0;
                                 function rotateImg()
                                 {
-                                    rotation += 180;  // adds 180°
+                                    rotation += 90;
 
                                     if (rotation === 360)
                                     {
