@@ -35,6 +35,8 @@ def image_data(path=Path("static/img/"), img_list=None):  # path of static image
         file = path / img_dict['file']  # file with path for local access (backend)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
+        d1 = ImageDraw.Draw(img_reference)
+        d1.text((28, 36), "You're Welcome Chase!", fill=(255, 0, 0))
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
