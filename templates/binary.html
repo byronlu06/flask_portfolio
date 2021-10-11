@@ -235,12 +235,12 @@
                     <br/>
 
                     <div class="row">
-                        <div class="col-sm-1"></div> <!-- Jinja for loops to create buttons -->
+                        <div class="col-sm-0"></div> <!-- Jinja for loops to create buttons -->
                         {% for i in range(1, 9) %}
                             <button class="col-sm-1" id="r{{i}}" onclick="toggleSwitch('r{{i}}')">0</button>
                         {% endfor %}
 
-                        <div class="offset-sm-1 col-sm-2">
+                        <div class="offset-sm-0 col-sm-2">
                             <p id="r">Display Value: 0</p>
                             <div style="height: 2em; background-color: #000000;" id="red"></div>
                         </div>
@@ -249,12 +249,12 @@
                     <br/>
 
                     <div class="row">
-                        <div class="col-sm-1"></div>
+                        <div class="col-sm-0"></div>
                         {% for i in range(1, 9) %}
                             <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
                         {% endfor %}
 
-                        <div class="offset-sm-1 col-sm-2">
+                        <div class="offset-sm-0 col-sm-2">
                             <p id="g">Display Value: 0</p>
                             <div style="height: 2em; background-color: #000000;" id="green"></div>
                         </div>
@@ -263,21 +263,25 @@
                     <br/>
 
                     <div class="row">
-                        <div class="col-sm-1"></div>
+                        <div class="col-sm-0"></div>
                         {% for i in range(1, 9) %}
                             <button class="col-sm-1" id="b{{i}}" onclick="toggleSwitch('b{{i}}')">0</button>
                         {% endfor %}
 
-                        <div class="offset-sm-1 col-sm-2">
+                        <div class="offset-sm-0 col-sm-2">
                             <p id="b">Display Value: 0</p>
                             <div style="height: 2em; background-color: #000000;" id="blue"></div>
                         </div>
                     </div>
 
+                    <br/>
+
+                    <div class="offset-sm-0 col-sm-10" id="color" style="background-color: #000000; height: 10vh;">
 
 
 
-                    <script>
+
+                        <script>
 
                         var red = 0;
                         var green = 0;
