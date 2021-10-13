@@ -1,37 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <div class="col-12">
-            <p>Hello, {{name}}!</p>
-        </div>
-        <div class="col-12">
-            <form action="/Michael/" id="Michael" method="POST" >
-                <label for="name">Type a greeting name?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Greetings!">
-                <p>Hi I'm Chase, and I am a student in AP Computer Science Principles. I like Guitars and Videogames. I am a sophmore.</p>
-                <p> This is my AP CSP Journal link</p>
-                <a href="https://docs.google.com/document/d/1hiMOqhQTmJGTgKJEy1R_7JWktAQJBVpXeyeKn1s1P54/edit" target="_blank">Journal</a>
-                <img width=300  src="">
-            </form>
-            <!-- Extending the predefined project layout -->
-            {% extends "layouts/basehomepage.html" %}
-
-            <!- This variable sets name of browser tab  -->
-            {% set project = "Chase" %}
-
-            <!- This is a replacement block for Body in base.html -->
-            {% block body %}
-                <!- Try building a new body here ->
-                <p>Hi I'm Chase, and I am a student in AP Computer Science Principles. I like Guitars and Videogames. I am a sophmore.</p>
-            {% endblock %}
-
-            <!- This is turning off birds background from base.html -->
-            {% block background %}
-            {% endblock %}
-        </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-        </div>
+<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+    <div class="col-12">
+        <p>Hello, {{name}}!</p>
     </div>
+    <div class="col-12">
+        <form action="/Michael/" id="greet" method="POST" >
+            <label for="name">Type a greeting name?</label>
+            <input name="name" id="name">
+            <input type="submit" value="Greetings!">
+            <p>Hi I'm Michael I am a junior in AP Computer Science Principles.</p>
+            <p> This is my AP CSP Journal link</p>
+            <a href="https://docs.google.com" target="_blank">Journal</a>
+            <img width=300  src="">
+        </form>
+        {% extends "layouts/basehomepage.html" %}
+
+    </div>
+    <div class="col-12">
+        <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
+    </div>
+</div>
