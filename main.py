@@ -79,7 +79,7 @@ def binary():
         bits = request.form.get("bits")
         if len(bits) != 0:  # input field has content
             return render_template("Binary.html", BITS=int(bits))
-    return render_template("Binary.html", BITS=16)
+    return render_template("Binary.html", BITS=8)
 
 
 @app.route('/binary2/', methods=['GET', 'POST'])
@@ -98,6 +98,10 @@ def layout():
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
+
+@app.route('/colorcodes/')
+def colorcodes():
+    return render_template("colorcodes.html")
 
 
 @app.route('/Chase/', methods=['GET', 'POST'])
