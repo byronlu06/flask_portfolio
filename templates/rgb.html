@@ -52,6 +52,7 @@
                                {{image.base64_GRAY}}  gray scale image
                             -->
                             <button onclick = "Greyscalez()">Gray Scale/Color</button>
+                            <button onclick = "invertz()">Invert</button>
                             <script>
 
                                 let grayscale = 0
@@ -64,15 +65,25 @@
                                         grayscale = 0
                                     }
                                 }
-
+                                let invert = 0
+                                function invertz() {
+                                    if (invert === 0 ) {
+                                        document.body.style.filter = "invert(100%)";
+                                        invert = 100
+                                    } else if (invert === 100 ) {
+                                        document.body.style.filter = "invert(0%)";
+                                        invert = 0
+                                    }
+                                }
                             </script>
 
-                            <button onclick="red('red');"> Red </button>
+                            <button onclick="Color('red');"> Red </button>
+                            <button onclick="Color('white');"> White </button>
 
 
                             <script>
 
-                                function red (color) {
+                                function Color (color) {
                                     document.body.style.background = color;
                                 }
                             </script>
@@ -111,7 +122,7 @@
                 {% endfor %}
                 </tbody>
             </table>
-
         </div>
     </div>
+
 {% endblock %}
