@@ -62,6 +62,10 @@ def byron():
     # starting and empty input default
     return render_template("byron.html", name="World")
 
+@app.route('/Logic Gates/')
+def LGate():
+    return render_template("Logic Gates.html")
+
 
 @app.route('/ChaseHomepage/')
 def CHomepage():

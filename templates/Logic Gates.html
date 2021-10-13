@@ -1,0 +1,172 @@
+{% include "layouts/navbar.html" %}
+
+{% set project = "Logic Gates" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logic Gates</title>
+    <script>
+        function logicGates()
+        {
+            A = document.getElementById("A").checked;
+            B = document.getElementById("B").checked;
+            outputAND = A && B;
+            outputOR = A || B;
+            outputXOR = (A && !B) || (!A && B);
+            outputNOT = !A
+            outputNAND = !(A && B);
+            outputNOR = !(A || B);
+
+
+            document.getElementById("outputAND_text").value = outputAND;
+            document.getElementById("outputOR_text").value = outputOR;
+            document.getElementById("outputXOR_text").value = outputXOR;
+            document.getElementById("outputNOT_text").value = outputNOT;
+            document.getElementById("outputNAND_text").value = outputNAND;
+            document.getElementById("outputNOR_text").value = outputNOR;
+        }
+    </script>
+    <style>
+        :root{
+            --yellow: #f1d483;
+            --green: #9daf9b;
+            --purple: #a59aaf;
+            --lblue: #6084a3;
+            --dblue: #2b425b;
+            --gray: #363d47;
+            --white: whitesmoke;
+            --black: black;
+            --grey: grey;
+        }
+
+        html, body{
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: yellow;
+            color: var(--black);
+            background-image: url('/static/assets/Cornbackground.jpg');
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+
+        .dark-mode {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        h1{
+            font-size: 5em;
+        }
+
+        a {
+            color: midnightblue;
+        }
+
+        .fa{
+            font-size: 3em;
+            letter-spacing: 1em;
+            transition: all .2s;
+            color: white;
+        }
+
+        .fa:hover{
+            transform: translateY(10px);
+        }
+
+        .fa-youtube-play:hover{
+            color: #cc0000;
+        }
+
+        .fa-twitter:hover{
+            color: #1da1f2;
+        }
+
+        .fa-github:hover{
+            color: #000000;
+        }
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+            color: white;
+            font-size: 2.5em;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .row{
+            margin: auto;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: var(--lblue);
+        }
+
+    </style>
+   </head>
+<body>
+<h1 class="text-center">Logic Gates</h1>
+<div class="container">
+    <div class="col-8">
+        <p>1 = Checked box 0 = Unchecked</p>
+
+        <input type="checkbox" id="A" name="A" value="A" />
+        <label for="A">A</label>
+        <br>
+        <input type="checkbox" id="B" name="B" value="B" />
+        <label for="B">B</label>
+        <br>
+        <input class="button" type="button" onclick="logicGates()" value="Submit">
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>Logic Gate</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td><img src=/static/assets/And-gate1.png width="300px" height="100px">And Gate</td>
+            <td><textarea style="resize: none" id="outputAND_text" rows="1" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td><img src=/static/assets/NandGate.png width="300px" height="100px">Nand Gate</td>
+            <td><textarea style="resize: none" id="outputNAND_text" rows="1" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td><img src=/static/assets/OrGate.png width="300px" height="100px">Or Gate</td>
+            <td><textarea style="resize: none" id="outputOR_text" rows="1" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td><img src=/static/assets/NorGate.png width="300px" height="100px">Nor Gate</td>
+            <td><textarea style="resize: none" id="outputNOT_text" rows="1" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td><img src=/static/assets/XorGate.png width="300px" height="100px">Xor Gate </td>
+            <td><textarea style="resize: none" id="outputXOR_text" rows="1" cols="20"></textarea></td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
