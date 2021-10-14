@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+{% include "layouts/navbar.html" %}
+
+{% block meta %}
+
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
         <div class="col-12">
             <p>Hello, {{name}}!</p>
@@ -16,19 +20,23 @@
                 <img width=300  src="">
             </form>
             <!-- Extending the predefined project layout -->
-            {% extends "layouts/basehomepage.html" %}
 
-            <!- This is a replacement block for Body in base.html -->
-            {% block body %}
-                <!- Try building a new body here ->
-                <p>Hi I'm Chase, and I am a student in AP Computer Science Principles. I like Guitars and Videogames. I am a sophmore.</p>
-            {% endblock %}
-
-            <!- This is turning off birds background from base.html -->
-            {% block background %}
-            {% endblock %}
-        </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
         </div>
     </div>
+
+    <style>
+        html, body{
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: var(--purple);
+            color: var(--black);
+            background-image: url('/static/assets/Cornbackground.jpg');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size: cover;
+
+{% endblock %}

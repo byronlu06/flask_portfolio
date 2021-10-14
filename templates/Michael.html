@@ -1,21 +1,42 @@
-<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-    <div class="col-12">
-        <p>Hello, {{name}}!</p>
-    </div>
-    <div class="col-12">
-        <form action="/Michael/" id="greet" method="POST" >
-            <label for="name">Type a greeting name?</label>
-            <input name="name" id="name">
-            <input type="submit" value="Greetings!">
-            <p>Hi I'm Michael I am a junior in AP Computer Science Principles.</p>
-            <p> This is my AP CSP Journal link</p>
-            <a href="https://docs.google.com" target="_blank">Journal</a>
-            <img width=300  src="">
-        </form>
-        {% extends "layouts/basehomepage.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
+{% include "layouts/navbar.html" %}
+
+{% block meta %}
+
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+        <div class="col-12">
+            <p>Hello, {{name}}!</p>
+        </div>
+        <div class="col-12">
+            <form action="/Michael/" id="greet" method="POST" >
+                <label for="name">Type a greeting name?</label>
+                <input name="name" id="name">
+                <input type="submit" value="Greetings!">
+                <p>Hi I'm Michael, I am a student in AP Computer Science Principles. I am a junior.</p>
+                <p> This is my AP CSP Journal link</p>
+                <a href="https://docs.google.com" target="_blank">Journal</a>
+                <img width=300  src="">
+            </form>
+            <!-- Extending the predefined project layout -->
+
+        </div>
     </div>
-    <div class="col-12">
-        <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-    </div>
-</div>
+
+    <style>
+        html, body{
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: var(--purple);
+            color: var(--black);
+            background-image: url('/static/assets/Cornbackground.jpg');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size: cover;
+
+{% endblock %}

@@ -107,6 +107,13 @@ def stub():
 def colorcodes():
     return render_template("colorcodes.html")
 
+@app.route('/unsignedaddition/')
+def unsignedaddition():
+    return render_template("unsignedaddition.html")
+
+@app.route('/signedaddition/')
+def signedaddition():
+    return render_template("signedaddition.html")
 
 @app.route('/Chase/', methods=['GET', 'POST'])
 def ChaseGreeting():

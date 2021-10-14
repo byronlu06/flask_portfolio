@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% extends "layout.html" %}
+{% include "layouts/navbar.html" %}
 
 <!-- Search for all the Hack: below for hack-a-thon and mini-lab requirements -->
 <!-- need to adjust Templates to start -->
@@ -229,5 +229,20 @@
                 </form>
 
             </div>
+
+        <style>
+            html, body{
+                margin: 0;
+                height: 100%;
+                animation: fadein 2s;
+                -moz-animation: fadein 2s; /* Firefox */
+                -webkit-animation: fadein 2s; /* Safari and Chrome */
+                -o-animation: fadein 2s; /* Opera */
+                background-color: var(--purple);
+                color: var(--black);
+                background-image: url('/static/assets/Cornbackground.jpg');
+                background-position:center;
+                background-repeat:no-repeat;
+                background-size: cover;
 
 {% endblock %}
