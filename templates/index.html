@@ -11,18 +11,11 @@
             --grey: grey;
         }
 
-        html, body{
-            margin: 0;
-            height: 100%;
-            animation: fadein 2s;
-            -moz-animation: fadein 2s; /* Firefox */
-            -webkit-animation: fadein 2s; /* Safari and Chrome */
-            -o-animation: fadein 2s; /* Opera */
-            background-color: var(--grey);
-            color: var(--white);
-            background-image: url('/static/assets/Cornbackground.jpg');
-            background-position:center;
-            background-repeat:no-repeat;
+        html,body {
+            background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
         }
 
@@ -141,34 +134,23 @@
 <div class="shape3">
 </div>
 
-<h1 style="color:black;text-align:center; font-family: 'Impact',serif;font-size: 40px" >Quick Access</h1>
+<table class="table">
+    <tr>
+        <th>Types of Corn</th>
+        <th>Click Me! TO exmapleore</th>
+    </tr>
+    <tr>
+        <td><img src=/static/assets/Cornwax.jpg width="200px" height="200px"></td>
+        <td> <a style="font-size: 40px" href={{ url_for('WaxyCorn') }}>Waxy Corn</a> </td>
+    </tr>
+    <tr><td><img src=/static/assets/dentcorn.jpg width="200px" height="200px"></td>
+        <td><a style="font-size: 40px" href="https://en.wikipedia.org/wiki/Dent_corn">Dent Corn</a> </td>
+    </tr>
+    <tr><td><img src=/static/assets/FlintCorn.jpg width="200px" height="200px"></td>
+        <td><a style="font-size: 40px" href="https://www.delightedcooking.com/what-is-flint-corn.htm">Flint Corn</a> </td>
+    </tr>
 
-    <div class="col-12">
-        <table class="table">
-
-            <div class="row">
-                <div class="col-3">
-                    <a href="{{ overview }}" class="btn">Waxy Corn</a>
-                </div>
-
-                <div class="col-3">
-                    <a href="{{ repo }}" class="btn">Dent Corn</a>
-                </div>
-
-                <div class="col-3">
-                    <a href="{{ frog }}" class="btn">Glass Gem Corn</a>
-                </div>
-
-                <div class="col-3">
-                    <a href="{{ horse }}" class="btn">Amylomaize Corn</a>
-                </div>
-
-
-            </div>
-
-            <br/>
-        </div>
-    </div>
-
-
+</table>
+<a href={{ url_for('ChaseGreeting') }}><img src="/static/assets/Cornman.jpg" width="25px" height="25px" alt="32"></a>
 </body>
+

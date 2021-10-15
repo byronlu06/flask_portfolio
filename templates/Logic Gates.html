@@ -41,16 +41,11 @@
             --grey: grey;
         }
 
-        html, body{
-            margin: 0;
-            height: 100%;
-            animation: fadein 2s;
-            -moz-animation: fadein 2s; /* Firefox */
-            -webkit-animation: fadein 2s; /* Safari and Chrome */
-            -o-animation: fadein 2s; /* Opera */
-            color: var(--black);
-            background-image: url('/static/assets/Cornbackground.jpg');
-            background-repeat:no-repeat;
+        html,body {
+            background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
             background-size: cover;
         }
 

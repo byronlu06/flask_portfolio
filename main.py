@@ -30,6 +30,10 @@ def test1():
 def aboutus():
     return render_template("aboutus.html")
 
+@app.route('/Waxy Corn/')
+def WaxyCorn():
+    return render_template("CornInfo/Waxy Corn.html")
+
 
 @app.route('/Homepages/')
 def HomePages():
