@@ -30,11 +30,6 @@ def test1():
 def aboutus():
     return render_template("aboutus.html")
 
-@app.route('/Waxy Corn/')
-def Waxycorn():
-    return render_template("CornInfo/Waxy Corn.html")
-
-
 
 @app.route('/Homepages/')
 def HomePages():
@@ -137,31 +132,3 @@ def rgb():
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
-
-@app.route('/Covid19/')
-def covid19():
-    if request.form:
-        name = request.form.get("name")
-        if len(name) != 0:  # input field has content
-            return render_template("Covid19.html", name=name)
-    # starting and empty input default
-    return render_template("Covid19.html", name="World")
-
-    url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
-    headers = {
-        'x-rapidapi-key': "dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063",
-        'x-rapidapi-host': "corona-virus-world-and-india-data.p.rapidapi.com"
-    }
-
-    response = requests.request("GET", url, headers=headers)
-
-    """
-    # uncomment this code to test from terminal
-    world = response.json().get('world_total')
-    countries = response.json().get('countries_stat')
-    print(world['total_cases'])
-    for country in countries:
-        print(country["country_name"])
-    """
-
-    return render_template("Covid19.html", stats=response.json())
