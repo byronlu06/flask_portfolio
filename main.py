@@ -119,6 +119,10 @@ def unsignedaddition():
 def signedaddition():
     return render_template("signedaddition.html")
 
+@app.route('/waxycorn/')
+def waxycorn():
+    return render_template("waxycorn.html")
+
 @app.route('/Chase/', methods=['GET', 'POST'])
 def ChaseGreeting():
     # submit button has been pushed
