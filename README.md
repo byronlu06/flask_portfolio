@@ -43,3 +43,25 @@
 | Chase Ott   | Extend/Switch ASCII to Unicode |  |
 | Byron Lu / Michael Sanborn | Color Codes | |
 | Byron Lu | Signed Addition | |
+
+## Week 8
+
+### PBL
+
+| Assignee | Requirements | Evidence                                                                                                                                             
+| -------- | --------------------------- | ------------------------- |
+| Ian Hua    | Work on Project   |  |                   
+| Chase Ott   | Fixing color codes / overall website | |
+| Byron Lu   | homepage / overall website | |
+| Michael Sanborn | |  |
+
+## Week 9
+
+### PBL
+
+| Assignee | Requirements | Evidence                                                                                                                                             
+| -------- | --------------------------- | ------------------------- |
+| Ian Hua    |    |  |                   
+| Chase Ott   |  | |
+| Byron Lu   |  | |
+| Michael Sanborn | |  |
