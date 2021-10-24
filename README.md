@@ -30,12 +30,16 @@
 ### <li> Coder: Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
 ### </ul>
 ### Chase did multiply and divide by 2 also, extend ascii to unicode 
+ 
 ## Week 7
-## Tasks
-## <li> update "Binary Math lab" and/or create a new "Logic Gate lab"
-## <li> Multiply and Divide by 2 (Shift).  In this example, make the Bits change positions.  Start 2^0 to 2^15.  If you multiply by 2 then 2^0 bit becomes 2^1, 2^1 to 2^2.  If you divide 2^15 becomes 2^14.   
-## <li> Extend/Switch ASCII  to Unicode.   Use representation of U-0000 to U-FFFF for your bits.  The extension of ASCII to Unicode mode allows you to show even more Characters and Character ranges.
-## <li> Color Codes.  Display three rows of 8 bits.  Allow for code to be 0 to 255, show color for RGB.  Also, show color for R,G,B independently.  This may require a different HTML layout.
-## <li> Unsigned Addition, Subtraction (Default).  Whole Numbers. Max number move from 255 to 65535.  Essentially 8 bits to 16 bits.  16 bits is often called a "Short Integer".
-## <li> Logic Gates.   CB requires an understanding of Expressions.  These are routed in Logic Gates (as language is routed in Latin). Consider an entirely different presentation area and idea.  In this example, you may have two inputs (a,b) and see how changing those inputs changes logic gate outputs (c).  This will likely require a different HTML.
-## <li> Signed Addition, Subtraction (Selection).  Integer Numbers.  Subtraction (8th bit is a Sign, max number is  +127 and negative -128, overflow now produces negative number.  If sign bit is set the calculation is 128-bits. 
+
+### Logic Gates
+
+| Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
+| -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aadit    | Logic Gates(work with Raiden Grp)    | [Commit](https://github.com/aaditgupta21/geniuzes/commit/26bfa8b09ce64aab0d15dff9777753360a1af310#diff-83c0def988e4a71703ece61d81ceb8b2c94956b14e47bc2696572c43f3796afa)                                                                                                                                                                 |
+| Aadit      | Unsigned Addition (work with Raiden group)                  | [Commit](https://github.com/aaditgupta21/geniuzes/commit/78ebc6e91ef14eb80676300eacbde8eabc19dcc0)                                                         |
+| Adi    | Multiply and Divide Shift | [Commit](https://github.com/aaditgupta21/geniuzes/commit/3d759d274a4a1f7d9c8dc46ef457a61295dcbdf9)                                   |
+| Rohan    | Extend/Switch ASCII to Unicode | [Commit](https://github.com/aaditgupta21/geniuzes/commit/d7f94f4b53052437b152ff38011f5e2f73326383) |
+| Rohit | Color Codes | [Commit](https://github.com/aaditgupta21/geniuzes/commit/9e015ecc40219ffecba223bdaaa56ebfed351f7e) |
+| Adi | Signed Addition | [Commit](https://github.com/aaditgupta21/geniuzes/commit/5c1d085a379c83b0467159fb2645cee258b58e19)|
