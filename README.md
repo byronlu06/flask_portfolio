@@ -46,8 +46,6 @@
 
 ## Week 8
 
-### PBL
-
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
 | Ian Hua    | Work on Project   |  |                   
@@ -56,8 +54,6 @@
 | Michael Sanborn | |  |
 
 ## Week 9
-
-### PBL
 
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
