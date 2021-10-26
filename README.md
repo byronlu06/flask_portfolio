@@ -29,4 +29,35 @@
 ### <li> Team Designer: Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
 ### <li> Coder: Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
 ### </ul>
-### Chase did multiply and divide by 2 also, extend ascii to unicode 
+
+ 
+## Week 7
+
+### Logic Gates
+
+| Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
+| -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Chase Ott    | Logic Gates    |                                                                                                                                                                 |
+| Chase Ott / Ian Hua      | Unsigned Addition       |                                                          |
+| Byron Lu   | Multiply and Divide Shift |                                   |
+| Chase Ott   | Extend/Switch ASCII to Unicode |  |
+| Byron Lu / Michael Sanborn | Color Codes | |
+| Byron Lu | Signed Addition | |
+
+## Week 8
+
+| Assignee | Requirements | Evidence                                                                                                                                             
+| -------- | --------------------------- | ------------------------- |
+| Ian Hua    | Work on Project   |  |                   
+| Chase Ott   | Fixing color codes / overall website | |
+| Byron Lu   | homepage / overall website | |
+| Michael Sanborn | |  |
+
+## Week 9
+
+| Assignee | Requirements | Evidence                                                                                                                                             
+| -------- | --------------------------- | ------------------------- |
+| Ian Hua    |    |  |                   
+| Chase Ott   |  | |
+| Byron Lu   |  | |
+| Michael Sanborn | |  |
