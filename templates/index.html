@@ -1,139 +1,6 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% include "layouts/navbar.html" %}
 
-<head>
-    <title> We Love Corn</title>
-    <h1 style="color:black;text-align:center; font-family: 'Consolas',serif;font-size: 40px" >The Wonders Of Corn</h1>
-    <style>
-        :root{
-            --white: whitesmoke;
-            --black: black;
-            --grey: grey;
-        }
-
-        html,body {
-            background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        .dark-mode {
-            background-color: var(--white);
-            color: var(--black);
-        }
-
-        h1{
-            font-size: 5em;
-        }
-
-        a {
-            color: midnightblue;
-        }
-
-        .fa{
-            font-size: 3em;
-            letter-spacing: 1em;
-            transition: all .2s;
-            color: white;
-        }
-
-        .fa:hover{
-            transform: translateY(10px);
-        }
-
-        .fa-youtube-play:hover{
-            color: #cc0000;
-        }
-
-        .fa-twitter:hover{
-            color: #1da1f2;
-        }
-
-        .fa-github:hover{
-            color: #000000;
-        }
-
-        .btn:link,
-        .btn:visited {
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 15px 40px;
-            display: inline-block;
-            border-radius: 100px;
-            transition: all .2s;
-            position: absolute;
-            color: white;
-            font-size: 2.5em;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
-        }
-
-        .btn:active {
-            transform: translateY(-1px);
-            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-        }
-
-        .row{
-            margin: auto;
-        }
-
-        .shape{
-            text-align:center;
-            background-color:black;
-            width:500px;
-            height:8px;
-            line-height:60px;
-            color:white;
-            margin:20px auto;
-            position:relative;
-            top: -20px
-        }
-        .shape2{
-            text-align:center;
-            background-color:black;
-            width:30px;
-            height:30px;
-            line-height:30px;
-            color:black;
-            margin:20px auto;
-            position:relative;
-            transform: rotate(45deg);
-            left: 250px ;
-            top: -60px;
-        }
-        .shape3{
-            text-align:center;
-            background-color:black;
-            width:30px;
-            height:30px;
-            line-height:30px;
-            color:black;
-            margin:20px auto;
-            position:relative;
-            transform: rotate(45deg);
-            left: -259px ;
-            top: -110px;
-        }
-    </style>
-
-</head>
-
-<body>
-<div class="shape">
-
-</div>
-<div class="shape2">
-</div>
-
-</div>
-<div class="shape3">
-</div>
-
 <table class="table">
     <br>
         <td> <b style="font-size: 30px">Types of Corn</b> </td>
@@ -163,3 +30,16 @@
 <a href={{ url_for('ChaseGreeting') }}><img src="/static/assets/Cornman.jpg" width="25px" height="25px" alt="32"></a>
 </body>
 
+<style>
+    :root{
+        --white: whitesmoke;
+        --black: black;
+        --grey: grey;
+    }
+
+    html,body {
+        background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
