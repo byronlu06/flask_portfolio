@@ -11,6 +11,13 @@
 ### [Team Scrum Board](https://github.com/byronlu06/flask_portfolio/projects/1)
 ### [Team Insight Graphs](https://github.com/byronlu06/flask_portfolio/graphs/contributors)
 ### [Website Prototype](https://www.figma.com/file/2Be2nAm0tM2Fkvxm0iZiVR/Website-Prototype?node-id=0%3A1)
+## Week 5
+
+| Assignee | Requirements             | Evidence                                                                                                |
+| -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Chase/Michael  | backend/frontend RGB     |  |
+| Byron      | fix file not found error |                                                                                              |
+| Byron/Ian    | Work on HomePage         |  |
 
 
 ## Week 6
@@ -19,10 +26,10 @@
 
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Aadit    | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
-| Adi      | Worked on backend and styling                                                       |                                                      |
-| Rohit    | Worked on backend, new development, documentation and Base 2, 8, 16 and 64 research |(https://github.com/aaditgupta21/geniuzes/commit/dc60e591d8ed02008b67679be7a6bc675c51221f)                                   |
-| Rohan    | Worked on styling and big o notation                                                |  |
+| Chase/Ian   | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
+| Byron    | Worked on backend and styling                                                       |                                                      |
+| Chase   | Worked on backend, new development, documentation and Base 2, 8, 16 and 64 research |                                   |
+| Byron/Michael   | Worked on styling and notation                                                |  |
 
  
 ## Week 7
