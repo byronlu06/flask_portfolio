@@ -52,13 +52,13 @@
 | Ian Hua    | Work on Project   |  |                   
 | Chase Ott   | Fixing color codes / overall website | |
 | Byron Lu   | homepage / overall website | |
-| Michael Sanborn | |  |
+| Michael Sanborn | Nothing I guess|  |
 
 ## Week 9
 
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
-| Ian Hua    |    |  |                   
-| Chase Ott   |  | |
-| Byron Lu   |  | |
-| Michael Sanborn | |  |
+| Ian Hua    |  Individual work  | https://cs-p-hq.slack.com/archives/D02KKN0QPNC/p1635140127001900 |                   
+| Chase Ott   | Individual work | |
+| Byron Lu   | Individual work | |
+| Michael Sanborn | Didnt even do the work so I don't know|  |
