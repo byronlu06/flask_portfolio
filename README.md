@@ -12,23 +12,17 @@
 ### [Team Insight Graphs](https://github.com/byronlu06/flask_portfolio/graphs/contributors)
 ### [Website Prototype](https://www.figma.com/file/2Be2nAm0tM2Fkvxm0iZiVR/Website-Prototype?node-id=0%3A1)
 
-## PBL Week 1,2
-### Tasks
-### <li>Scrum Board (Ideation / Design )</li>
-### <li>GitHub assets</li>
-### <li>TPT points (Design-a-Thon)</li>
-### <li>GitHub commit(s) or Ideation / Design Document Assets,  Scrum board completion</li>
-### <li>Integration of Greet into each individual's page</li>
-### <li>TPT Points watch and journal assigned videos</li>
-### <li>Tool Declare, Personal Work plan described for Computer usage in School and at home.  </li>
-### </ul>
-## Sprint Week 3,4
-### Tasks
-### <li> Team Designer: Prototype layout. Get your own STYLE, COLORS, FONTS; get your basic groove into your site. Create these elements. This should be CSS.
-### <li> Coder: Prototype layout. Get your own STYLE, COLORS, FONTS; get your basic groove into your site. Create these elements. This should be CSS.
-### <li> Team Designer: Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
-### <li> Coder: Create location for Mini-labs, you could rename this to something for your team (aka How-its-Made, Concepts, etc).  This can have research or early concepts from your team.   Additionally this section should have embeds to Brain Write, Wireframes, Greet, and TPT3.  Evidence of research or early design. Try3x3 or 4x4 design on page.
-### </ul>
+
+## Week 6
+
+### RGB Project
+
+| Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
+| -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aadit    | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
+| Adi      | Worked on backend and styling                                                       |                                                      |
+| Rohit    | Worked on backend, new development, documentation and Base 2, 8, 16 and 64 research |(https://github.com/aaditgupta21/geniuzes/commit/dc60e591d8ed02008b67679be7a6bc675c51221f)                                   |
+| Rohan    | Worked on styling and big o notation                                                |  |
 
  
 ## Week 7
