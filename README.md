@@ -58,7 +58,7 @@
 
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
-| Ian Hua    |  Individual work  | https://cs-p-hq.slack.com/archives/D02KKN0QPNC/p1635140127001900 |                   
+| Ian Hua    |  Individual work  | https://cs-p-hq.slack.com/files/U02BSG2JPBL/F02JT2TCHHT/image_from_ios.mov |                   
 | Chase Ott   | Individual work | |
 | Byron Lu   | Individual work | |
 | Michael Sanborn | Didnt even do the work so I don't know|  |
