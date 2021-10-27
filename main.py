@@ -119,9 +119,13 @@ def unsignedaddition():
 def signedaddition():
     return render_template("signedaddition.html")
 
-@app.route('/home/')
-def home():
-    return render_template("home.html")
+@app.route('/Waxycorn/')
+def Waxycorn():
+    return render_template("Waxycorn.html")
+
+@app.route('/information/')
+def information():
+    return render_template("information.html")
 
 @app.route('/purchasing/')
 def purchasing():

@@ -1,46 +1,163 @@
-<!-- Extending the project layout, as this file will do minor customizations -->
+<!DOCTYPE html>
+<html lang="en">
+
 {% include "layouts/navbar.html" %}
 
-<table class="table">
-    <br>
-        <td> <b style="font-size: 30px">Types of Corn</b> </td>
-         <td> <b style="font-size: 30px">Description</b> </td>
-    </br>
-    </tr>
-        <td> <img src=/static/assets/Cornwax.jpg width="200px" height="200px"> <b style="font-size: 30px;text-align: center">Waxy Corn</b> </td>
-        <td> <a style="font-size: 20px;font-family: Georgia;color: black">Waxy corn or glutinous corn is a type of field corn characterized by its sticky texture when cooked as a result of larger amounts of amylopectin. The corn was first described from a specimen from China in 1909. As this plant showed many peculiar traits, the American breeders long used it as a genetic marker to tag the existence of hidden genes in other maize breeding programs. In 1922 a researcher found that the endosperm of waxy maize contained only amylopectin and no amylose starch molecule in opposition to normal dent maize varieties that contain both. Until World War II, the main source of starch in the USA was tapioca but when Japan severed the supply lines of the States, they forced processors to turn to waxy maize. Amylopectin or waxy starch is now used mainly in food products, but also in the textile, adhesive, corrugating and paper industry.</a> </td>
-    </tr>
-        <td> <img src=/static/assets/dentcorn.jpg width="200px" height="200px"> <b style="font-size: 30px;text-align: center">Dent Corn</b> </td>
-        <td> <a style="font-size: 20px;font-family: Georgia">Dent corn, also known as grain corn, is a type of field corn with a high soft starch content. It received its name because of the small indentation, or "dent", at the crown of each kernel on a ripe ear of corn. Reid's Yellow Dent is a variety developed by central Illinois farmer James L. Reid. Reid and his father, Robert Reid, moved from Brown County, Ohio to Tazewell County, Illinois in 1846 bringing with them a red corn variety known as "Johnny Hopkins", and crossed it with varieties of flint corn and flour corn.[1] Most of today's hybrid corn varieties and cultivars are derived from it. This variety won a prize at the 1893 World's Fair. Most of the corn grown in the United States today is yellow dent corn or a closely related variety derived from it.[2] Dent corn is the variety used in food manufacturing as the base ingredient for cornmeal flour (used in the baking of cornbread), corn chips, tortillas, and taco shells. Starch derived from this high-starch content variety is turned into plastics, as well as fructose which is used as a sweetener (high-fructose corn syrup) in many processed foods and soft drinks.</a> </td>
-    </tr>
-        <td><img src=/static/assets/FlintCorn.jpg width="200px" height="200px"> <b style="font-size: 30px;text-align: center">Flint Corn</b> </td>
-        <td> <a style="font-size: 20px;font-family: Georgia">Flint corn (Zea mays var. indurata; also known as Indian corn or sometimes calico corn) is a variant of maize, the same species as common corn.[1] Because each kernel has a hard outer layer to protect the soft endosperm, it is likened to being hard as flint; hence the name.[2] The six major types of corn are dent corn, flint corn, pod corn, popcorn, flour corn, and sweet corn. With less soft starch than dent corn (Zea mays indentata), flint corn does not have the dents in each kernel from which dent corn gets its name.[4] This is one of the three types of corn cultivated by Native Americans, both in New England and across the northern tier, including tribes such as the Pawnee on the Great Plains. Archaeologists have found evidence of such corn cultivation in what is now the United States before 1000 BC.[5] Cultivation of corn occurred hundreds of years earlier among the Mississippian culture people, whose civilization arose based on population density and trade because of surplus corn crops.</a> </td>
-    </tr>
-        <td><img src=/static/assets/sweetcorn.jpg width="200px" height="200px"> <b style="font-size: 30px;text-align: center">Sweet Corn</b> </td>
-        <td> <a style="font-size: 20px;font-family: Georgia">Sweet corn (Zea mays' convar. saccharata var. rugosa;[1] also called sugar corn and pole corn) is a variety of maize grown for human consumption with a high sugar content. Sweet corn is the result of a naturally occurring recessive mutation in the genes which control conversion of sugar to starch inside the endosperm of the corn kernel. Unlike field corn varieties grown for animal fodder, which are harvested when the kernels are dry and mature (dent stage), sweet corn is picked when immature (milk stage) and prepared and eaten as a vegetable, rather than a grain. Since the process of maturation involves converting sugar to starch, sweet corn stores poorly and must be eaten fresh, canned, or frozen, before the kernels become tough and starchy. Sweet corn occurs as a spontaneous mutation in field corn and was grown by several Native American tribes. The Iroquois gave the first recorded sweet corn (called 'Papoon') to European settlers in 1779.[3] It soon became a popular food in the southern and central regions of the United States.</a> </td>
-    </tr>
-        <td><img src=/static/assets/flourcorn.jpg width="200px" height="200px"> <b style="font-size: 30px;text-align: center">Flour Corn</b> </td>
-        <td> <a style="font-size: 20px;font-family: Georgia">Flour corn (Zea mays var. amylacea) is a variety of corn with a soft starchy endosperm and a thin pericarp.[1] It is primarily used to make corn flour.[clarification needed] This type, frequently found in Aztec and Inca graves, is widely grown in the drier parts of the United States, western South America and South Africa. The large-seeded corns of Peru are used in the preparation of chicha. In South Africa they are known as bread mealies. Flour corn is composed almost completely of soft starch with thin seed coats. Kernels are round and smooth like flint corns. In these modern times, they are primarily used for making corn flour. Historically, flour corn was also raised and used for parching. Parching is a process whereby the kernels are gently roasted until they slightly expand, the seed coat splits and the kernels become soft. Parched corn was used as a snack or trail provision and could last several months if stored properly.</a> </td>
-    </tr>
-        <td><img src=/static/assets/podcorn.jfif width="200px" height="200px"> <b style="font-size: 30px;text-align: center">Pod Corn</b> </td>
-        <td> <a style="font-size: 20px;font-family: Georgia">Pod corn or wild maize is a variety of maize.[1][2] It is not a wild ancestor of maize but rather a mutant that forms leaves around each kernel. Pod corn (tunicata Sturt) is not grown commercially, but it is preserved in some localities. Pod corn forms glumes around each kernel which is caused by a mutation at the Tunicate locus. Because of its bizarre appearance, pod corn has had a religious significance to certain Native American tribes. Because the Tunicate phenotype is a universal characteristic of wild grasses and is different from naked kernels in maize varieties common today, pod corn is thought to be a progenitor of maize by some researchers.  Pod corn is mostly found in South and Central America.</a> </td>
-    </tr>
+<head>
+    <title> We Love Corn</title>
+    <h1 style="color:black;text-align:center; font-family: 'Consolas',serif;font-size: 40px" >The Wonders Of Corn</h1>
+    <style>
+        :root{
+            --white: whitesmoke;
+            --black: black;
+            --grey: grey;
+        }
 
+        html,body {
+            background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .dark-mode {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        h1{
+            font-size: 5em;
+        }
+
+        a {
+            color: midnightblue;
+        }
+
+        .fa{
+            font-size: 3em;
+            letter-spacing: 1em;
+            transition: all .2s;
+            color: white;
+        }
+
+        .fa:hover{
+            transform: translateY(10px);
+        }
+
+        .fa-youtube-play:hover{
+            color: #cc0000;
+        }
+
+        .fa-twitter:hover{
+            color: #1da1f2;
+        }
+
+        .fa-github:hover{
+            color: #000000;
+        }
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+            color: white;
+            font-size: 2.5em;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .row{
+            margin: auto;
+        }
+
+        .shape{
+            text-align:center;
+            background-color:black;
+            width:500px;
+            height:8px;
+            line-height:60px;
+            color:white;
+            margin:20px auto;
+            position:relative;
+            top: -20px
+        }
+        .shape2{
+            text-align:center;
+            background-color:black;
+            width:30px;
+            height:30px;
+            line-height:30px;
+            color:black;
+            margin:20px auto;
+            position:relative;
+            transform: rotate(45deg);
+            left: 250px ;
+            top: -60px;
+        }
+        .shape3{
+            text-align:center;
+            background-color:black;
+            width:30px;
+            height:30px;
+            line-height:30px;
+            color:black;
+            margin:20px auto;
+            position:relative;
+            transform: rotate(45deg);
+            left: -259px ;
+            top: -110px;
+        }
+        img.center {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="shape">
+
+</div>
+<div class="shape2">
+</div>
+
+</div>
+<div class="shape3">
+</div>
+
+<table style="width:100%">
+    <tr>
+        <a href={{ url_for('Waxycorn') }}><img class="center" src="/static/assets/Cornwax.jpg" width="200px" height="200px" alt="32"></a>
+    </tr>
 </table>
-<a href={{ url_for('ChaseGreeting') }}><img src="/static/assets/Cornman.jpg" width="25px" height="25px" alt="32"></a>
-</body>
+
 
 <style>
-    :root{
-        --white: whitesmoke;
-        --black: black;
-        --grey: grey;
-    }
-
-    html,body {
-        background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+    html, body{
+        margin: 0;
+        height: 100%;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+        background-color: var(--purple);
+        color: var(--black);
+        background-image: url('/static/assets/Cornbackground.jpg');
+        background-position:center;
+        background-repeat:no-repeat;
         background-size: cover;
-

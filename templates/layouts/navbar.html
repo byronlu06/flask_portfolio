@@ -8,8 +8,8 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href={{ url_for('home') }}>Home</a>
-            <a class="nav-link" href={{ url_for('index') }}>Information</a>
+            <a class="nav-link" href={{ url_for('index') }}>Home</a>
+            <a class="nav-link" href={{ url_for('information') }}>Information</a>
             <a class="nav-link" href={{ url_for('facts') }}>Interesting Facts</a>
             <a class="nav-link" href={{ url_for('purchasing') }}>Purchasing Corn</a>
             <li class="nav-item dropdown">
