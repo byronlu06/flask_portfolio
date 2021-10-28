@@ -39,8 +39,8 @@
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chase Ott    | Logic Gates    |                                                                                                                                                                 |
-| Chase Ott / Ian Hua      | Unsigned Addition       |                                                          |
-| Byron Lu   | Multiply and Divide Shift |                                   |
+| Byron Lu / Ian Hua      | Unsigned Addition       |                                                          |
+| Chase Ott   | Multiply and Divide Shift |                                   |
 | Chase Ott   | Extend/Switch ASCII to Unicode |  |
 | Byron Lu / Michael Sanborn | Color Codes | |
 | Byron Lu | Signed Addition | |
@@ -58,7 +58,7 @@
 
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
-| Ian Hua    |  Individual work  | https://cs-p-hq.slack.com/files/U02BSG2JPBL/F02JT2TCHHT/image_from_ios.mov |                   
+| Ian Hua    |  Individual work  |  |                   
 | Chase Ott   | Individual work | |
 | Byron Lu   | Individual work | |
 | Michael Sanborn | Individual work|  |
