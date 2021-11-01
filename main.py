@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request
 from image import image_data
 from pathlib import Path
-from cornapi import api_bp
+from API.cornapi import api_bp
+import requests
 from flask import Blueprint
+
+main = Blueprint('main', __name__)
 
 
 # create a Flask instance
@@ -160,13 +163,13 @@ if __name__ == "__main__":
 
 @app.route('/corn', methods=['GET', 'POST'])
 def corn():
-    url = "http://127.0.0.1:5000/corn"
+    url = "http://localhost:5000/corn"
     response = requests.request("GET", url)
     return render_template("corn.html", corn=response.json())
 
 @app.route('/corns/', methods=['GET', 'POST'])
 def corns():
-    url = "http://127.0.0.1:5000/corns"
+    url = "http://localhost:5000/corns"
     response = requests.request("GET", url)
     return render_template("corns.html", corns=response.json())
 
