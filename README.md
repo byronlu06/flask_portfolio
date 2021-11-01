@@ -15,7 +15,7 @@
 
 | Assignee | Requirements             | Evidence                                                                                                |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Chase/Michael  | backend/frontend RGB     |  |
+| Chase | backend/frontend RGB     |  |
 | Byron      | fix file not found error |                                                                                              |
 | Byron/Ian    | Work on HomePage         |  |
 
@@ -29,7 +29,7 @@
 | Chase/Ian   | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
 | Byron    | Worked on backend and styling                                                       |                                                      |
 | Chase   | Worked on backend, new development, documentation and Base 2, 8, 16 and 64 research |                                   |
-| Byron/Michael   | Worked on styling and notation                                                |  |
+| Byron   | Worked on styling and notation                                                |  |
 
  
 ## Week 7
@@ -42,7 +42,7 @@
 | Byron Lu / Ian Hua      | Unsigned Addition       |                                                          |
 | Chase Ott   | Multiply and Divide Shift |                                   |
 | Chase Ott   | Extend/Switch ASCII to Unicode |  |
-| Byron Lu / Michael Sanborn | Color Codes | |
+| Byron Lu | Color Codes | |
 | Byron Lu | Signed Addition | |
 
 ## Week 8
