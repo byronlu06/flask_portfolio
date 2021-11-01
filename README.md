@@ -17,7 +17,7 @@
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
 | Chase | backend/frontend RGB     |  |
 | Byron      | fix file not found error |                                                                                              |
-| Byron/Ian    | Work on HomePage         |  |
+| Byron    | Work on HomePage         |  |
 
 
 ## Week 6
@@ -26,7 +26,7 @@
 
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chase/Ian   | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
+| Chase   | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
 | Byron    | Worked on backend and styling                                                       |                                                      |
 | Chase   | Worked on backend, new development, documentation and Base 2, 8, 16 and 64 research |                                   |
 | Byron   | Worked on styling and notation                                                |  |
@@ -39,7 +39,7 @@
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chase Ott    | Logic Gates    |                                                                                                                                                                 |
-| Byron Lu / Ian Hua      | Unsigned Addition       |                                                          |
+| Byron Lu     | Unsigned Addition       |                                                          |
 | Chase Ott   | Multiply and Divide Shift |                                   |
 | Chase Ott   | Extend/Switch ASCII to Unicode |  |
 | Byron Lu | Color Codes | |
