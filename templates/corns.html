@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% include "layouts/navbar.html" %}
+
+{% block body %}
+    <div class="container">
+        <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
+            <div class="col-12" style="text-align: center;">
+                <h1><strong>All Corns</strong></h1>
+            </div>
+
+            <div class="jumbotron text-left row">
+                <div class="col-md">
+                    {% for corn in corns %}
+                        <p style="color: black;" class="setup"><strong>{{corn.id}}. {{corn.corn}}</strong></p>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+        <table style="margin: 2%">
+            <tr>
+                <th>JSON Data</th>
+            </tr>
+            <tr>
+                <td>{{corns}}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

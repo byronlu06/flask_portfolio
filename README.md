@@ -15,9 +15,9 @@
 
 | Assignee | Requirements             | Evidence                                                                                                |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Chase/Michael  | backend/frontend RGB     |  |
+| Chase | backend/frontend RGB     |  |
 | Byron      | fix file not found error |                                                                                              |
-| Byron/Ian    | Work on HomePage         |  |
+| Byron    | Work on HomePage         |  |
 
 
 ## Week 6
@@ -26,10 +26,10 @@
 
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chase/Ian   | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
+| Chase   | Worked on frontend, new development and corrections in code                         |                                                                                                                                                        |
 | Byron    | Worked on backend and styling                                                       |                                                      |
 | Chase   | Worked on backend, new development, documentation and Base 2, 8, 16 and 64 research |                                   |
-| Byron/Michael   | Worked on styling and notation                                                |  |
+| Byron   | Worked on styling and notation                                                |  |
 
  
 ## Week 7
@@ -39,10 +39,10 @@
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chase Ott    | Logic Gates    |                                                                                                                                                                 |
-| Byron Lu / Ian Hua      | Unsigned Addition       |                                                          |
+| Byron Lu     | Unsigned Addition       |                                                          |
 | Chase Ott   | Multiply and Divide Shift |                                   |
 | Chase Ott   | Extend/Switch ASCII to Unicode |  |
-| Byron Lu / Michael Sanborn | Color Codes | |
+| Byron Lu | Color Codes | |
 | Byron Lu | Signed Addition | |
 
 ## Week 8
@@ -62,3 +62,10 @@
 | Chase Ott   | Individual work | |
 | Byron Lu   | Individual work | |
 | Michael Sanborn | Individual work|  |
+
+<html>
+<body>
+<iframe width="420" height="345" src="https://www.youtube.com/watch?v=cPenz-AWZDE&t=36s&ab_channel=tomorrowmanautoplay=1">
+</iframe>
+</body>
+</html>
