@@ -19,6 +19,9 @@ def index():
 def Minilabs():
     return render_template("Mini Lab Stuff.html")
 
+@app.route('/Feature1/')
+def F1():
+    return render_template("Feature 1.html")
 
 @app.route('/Test1/')
 def test1():

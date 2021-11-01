@@ -1,0 +1,32 @@
+{% include "layouts/navbar.html" %}
+<style>
+    html,body {
+        background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+<input type="button" id="btnSearch" value="Click For A Type of Corn" onclick="GetValue();" />
+<p id="message" style="font-size: 50px"></p>
+<img id="image" src="/static/img/black-square-16.png" alt="" width="600" height="600">
+<script>
+    function GetValue()
+{
+
+    const myarray2 = [
+        {"type": "Dent Corn", "image": "/static/assets/dentcorn.jpg"},
+        {"type": "Waxy Corn", "image": "/static/assets/Cornwax.jpg"},
+        {"type": "Flint Corn", "image": "/static/assets/FlintCorn.jpg"},
+        {"type": "Sweet Corn", "image": "/static/assets/sweetcorn.jpg"},
+        {"type": "Flour Corn", "image": "/static/assets/flourcorn.jpg"},
+        {"type": "Pod Corn", "image": "/static/assets/podcorn.jfif"},
+    ];
+    const num = Math.floor(Math.random() * myarray2.length);
+    const type = myarray2[num].type;
+    const image = myarray2[num].image;
+    document.getElementById("message").innerHTML= type;
+    document.getElementById("image").src = image;
+}
+</script>
