@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f941245-da0e-46a6-b133-3c9c685963d2" name="Changes" comment="api">
-      <change beforePath="$PROJECT_DIR$/API/cornapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/cornapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cornapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/cornapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/computer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/computer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/computer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/cornleaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/cornseed.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/cornseed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/cornsilk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Feature 2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -37,14 +49,20 @@
     <option name="directoryName" value="ch8t7jgd" />
   </component>
   <component name="ProjectId" id="20COaNX2SSLOnNMYbnyAE8onZ6v" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -112,7 +130,10 @@
       <option name="presentableId" value="Default" />
       <updated>1635545173916</updated>
       <workItem from="1635545176687" duration="2036000" />
-      <workItem from="1635721012254" duration="3645000" />
+      <workItem from="1635721012254" duration="4476000" />
+      <workItem from="1635800654991" duration="3418000" />
+      <workItem from="1635810445177" duration="3770000" />
+      <workItem from="1635887184821" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1635724122973</created>
@@ -121,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635724122973</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="api">
+      <created>1635724879225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635724879225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +168,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="api" />
     <option name="LAST_COMMIT_MESSAGE" value="api" />
   </component>
@@ -148,6 +177,6 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1635724679172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1635890299116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

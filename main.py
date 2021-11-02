@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 from image import image_data
 from pathlib import Path
-from API.cornapi import api_bp
 import requests
 from flask import Blueprint
 
@@ -21,6 +20,9 @@ app_starter = Blueprint('starter', __name__,
 def index():
     return render_template("index.html")
 
+@app.route('/Feature2/')
+def F2():
+    return render_template("Feature 2.html")
 
 # connects /kangaroos path to render aboutus.html
 @app.route('/Mini Lab Stuff/')
@@ -146,6 +148,7 @@ def purchasing():
 def facts():
     return render_template("facts.html")
 
+
 @app.route('/Chase/', methods=['GET', 'POST'])
 def ChaseGreeting():
     # submit button has been pushed
@@ -175,11 +178,6 @@ def corns():
     url = "http://localhost:5000/corns"
     response = requests.request("GET", url)
     return render_template("corns.html", corns=response.json())
-
-app.register_blueprint(api_bp)
-app.register_blueprint(model_bp)
-app.register_blueprint(app_starter)
-app.register_blueprint(y2022_bp)
 
 if __name__ == "__main__":
     # runs the application on the repl development server

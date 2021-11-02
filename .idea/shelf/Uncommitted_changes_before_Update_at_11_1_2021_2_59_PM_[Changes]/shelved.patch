@@ -1,0 +1,194 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from flask import Flask, render_template, request\r\nfrom image import image_data\r\nfrom pathlib import Path\r\nfrom API.cornapi import api_bp\r\nimport requests\r\nfrom flask import Blueprint\r\n\r\nmain = Blueprint('main', __name__)\r\n\r\n\r\n# create a Flask instance\r\napp = Flask(__name__)\r\napp_starter = Blueprint('starter', __name__,\r\n                        url_prefix='/starter',\r\n                        template_folder='templates',\r\n                        static_folder='static',\r\n                        static_url_path='assets')\r\n\r\n# connects default URL to render index.html\r\n@app.route('/')\r\ndef index():\r\n    return render_template(\"index.html\")\r\n\r\n\r\n# connects /kangaroos path to render aboutus.html\r\n@app.route('/Mini Lab Stuff/')\r\ndef Minilabs():\r\n    return render_template(\"Mini Lab Stuff.html\")\r\n\r\n\r\n@app.route('/Test1/')\r\ndef test1():\r\n    return render_template(\"test1.html\")\r\n\r\n\r\n# connects /kangaroos path to render aboutus.html\r\n@app.route('/aboutus/')\r\ndef aboutus():\r\n    return render_template(\"aboutus.html\")\r\n\r\n@app.route('/Waxy Corn/')\r\ndef WaxyCorn():\r\n    return render_template(\"CornInfo/Waxy Corn.html\")\r\n\r\n\r\n@app.route('/Homepages/')\r\ndef HomePages():\r\n    return render_template(\"Homepages.html\")\r\n\r\n\r\n@app.route('/hawkers/')\r\ndef hawkers():\r\n    return render_template(\"hawkers.html\")\r\n\r\n\r\n@app.route('/Michael/', methods=['GET', 'POST'])\r\ndef Michael():\r\n    # submit button has been pushed\r\n    if request.form:\r\n        name = request.form.get(\"name\")\r\n        if len(name) != 0:  # input field has content\r\n            return render_template(\"Michael.html\", name=name)\r\n    # starting and empty input default\r\n    return render_template(\"Michael.html\", name=\"World\")\r\n\r\n\r\n@app.route('/byron/', methods=['GET', 'POST'])\r\ndef byron():\r\n    # submit button has been pushed\r\n    if request.form:\r\n        name = request.form.get(\"name\")\r\n        if len(name) != 0:  # input field has content\r\n            return render_template(\"byron.html\", name=name)\r\n    # starting and empty input default\r\n    return render_template(\"byron.html\", name=\"World\")\r\n\r\n@app.route('/Logic Gates/')\r\ndef LGate():\r\n    return render_template(\"Logic Gates.html\")\r\n\r\n\r\n@app.route('/ChaseHomepage/')\r\ndef CHomepage():\r\n    return render_template(\"ChaseHomepage.html\")\r\n\r\n\r\n@app.route('/byronhomepage/')\r\ndef BHomepage():\r\n    return render_template(\"byronhomepage.html\")\r\n\r\n\r\n@app.route('/binary/', methods=['GET', 'POST'])\r\ndef binary():\r\n    if request.form:\r\n        bits = request.form.get(\"bits\")\r\n        if len(bits) != 0:  # input field has content\r\n            return render_template(\"Binary.html\", BITS=int(bits))\r\n    return render_template(\"Binary.html\", BITS=8)\r\n\r\n\r\n@app.route('/binary2/', methods=['GET', 'POST'])\r\ndef binary2():\r\n    if request.form:\r\n        bits2 = request.form.get(\"bits2\")\r\n        if len(bits2) != 0:  # input field has content\r\n            return render_template(\"Binary2.html\", BITS=int(bits2))\r\n    return render_template(\"Binary2.html\", BITS=8)\r\n\r\n@app.route('/layout/')\r\ndef layout():\r\n    return render_template(\"layout.html\")\r\n\r\n\r\n@app.route('/stub/')\r\ndef stub():\r\n    return render_template(\"stub.html\")\r\n\r\n@app.route('/colorcodes/')\r\ndef colorcodes():\r\n    return render_template(\"colorcodes.html\")\r\n\r\n@app.route('/unsignedaddition/')\r\ndef unsignedaddition():\r\n    return render_template(\"unsignedaddition.html\")\r\n\r\n@app.route('/signedaddition/')\r\ndef signedaddition():\r\n    return render_template(\"signedaddition.html\")\r\n\r\n@app.route('/Waxycorn/')\r\ndef Waxycorn():\r\n    return render_template(\"Waxycorn.html\")\r\n\r\n@app.route('/information/')\r\ndef information():\r\n    return render_template(\"information.html\")\r\n\r\n@app.route('/purchasing/')\r\ndef purchasing():\r\n    return render_template(\"purchasing.html\")\r\n\r\n@app.route('/facts/')\r\ndef facts():\r\n    return render_template(\"facts.html\")\r\n\r\n@app.route('/Chase/', methods=['GET', 'POST'])\r\ndef ChaseGreeting():\r\n    # submit button has been pushed\r\n    if request.form:\r\n        name = request.form.get(\"name\")\r\n        if len(name) != 0:  # input field has content\r\n            return render_template(\"Chase.html\", name=name)\r\n    # starting and empty input default\r\n    return render_template(\"Chase.html\", name=\"World\")\r\n\r\n@app.route('/rgb/')\r\ndef rgb():\r\n    path = Path(app.root_path) / \"static\" / \"img\"\r\n    return render_template('rgb.html', images=image_data(path))\r\n# runs the application on the development server\r\nif __name__ == \"__main__\":\r\n    app.run(debug=True)\r\n\r\n@app.route('/corn', methods=['GET', 'POST'])\r\ndef corn():\r\n    url = \"http://localhost:5000/corn\"\r\n    response = requests.request(\"GET\", url)\r\n    return render_template(\"corn.html\", corn=response.json())\r\n\r\n@app.route('/corns/', methods=['GET', 'POST'])\r\ndef corns():\r\n    url = \"http://localhost:5000/corns\"\r\n    response = requests.request(\"GET\", url)\r\n    return render_template(\"corns.html\", corns=response.json())\r\n\r\napp.register_blueprint(api_bp)\r\napp.register_blueprint(model_bp)\r\napp.register_blueprint(app_starter)\r\napp.register_blueprint(y2022_bp)\r\n\r\nif __name__ == \"__main__\":\r\n    # runs the application on the repl development server\r\n    app.run(debug=True, port=\"5222\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision bf03c9823d26c8dc4e646d25e045b173fa0033e4)
++++ b/main.py	(date 1635803960098)
+@@ -1,7 +1,6 @@
+ from flask import Flask, render_template, request
+ from image import image_data
+ from pathlib import Path
+-from API.cornapi import api_bp
+ import requests
+ from flask import Blueprint
+ 
+@@ -16,10 +15,10 @@
+                         static_folder='static',
+                         static_url_path='assets')
+ 
+-# connects default URL to render index.html
+-@app.route('/')
+-def index():
+-    return render_template("index.html")
++# connects default URL to render home.html
++@app.route('/home/')
++def home():
++    return render_template("home.html")
+ 
+ 
+ # connects /kangaroos path to render aboutus.html
+@@ -143,6 +142,7 @@
+ def facts():
+     return render_template("facts.html")
+ 
++
+ @app.route('/Chase/', methods=['GET', 'POST'])
+ def ChaseGreeting():
+     # submit button has been pushed
+@@ -173,11 +173,6 @@
+     response = requests.request("GET", url)
+     return render_template("corns.html", corns=response.json())
+ 
+-app.register_blueprint(api_bp)
+-app.register_blueprint(model_bp)
+-app.register_blueprint(app_starter)
+-app.register_blueprint(y2022_bp)
+-
+ if __name__ == "__main__":
+     # runs the application on the repl development server
+     app.run(debug=True, port="5222")
+\ No newline at end of file
+Index: templates/layouts/navbar.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!-- Navigation Bar from bootstrap\r\nThis HTML is setup as a fragment allowing it to be \"included\" by other HTML files via Jinja2\r\n-->\r\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->\r\n            <a class=\"nav-link\" href={{ url_for('index') }}>Home</a>\r\n            <a class=\"nav-link\" href={{ url_for('information') }}>Information</a>\r\n            <a class=\"nav-link\" href={{ url_for('facts') }}>Interesting Facts</a>\r\n            <a class=\"nav-link\" href={{ url_for('purchasing') }}>Purchasing Corn</a>\r\n            <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbardrop\" data-toggle=\"dropdown\">\r\n                    About Us\r\n                </a>\r\n                <div class=\"dropdown-menu\">\r\n                    <a class=\"dropdown-item\" href={{ url_for('ChaseGreeting') }}>Chase</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('byron') }}>Byron</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('Michael') }}>Michael</a>\r\n                </div>\r\n            </li>\r\n            <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbardrop\" data-toggle=\"dropdown\">\r\n                    Mini Projects\r\n                </a>\r\n                <div class=\"dropdown-menu\">\r\n                    <a class=\"dropdown-item\" href={{ url_for('binary') }}>Binary</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('colorcodes') }}>Color Codes</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('LGate') }}>Logic Gates</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('unsignedaddition') }}>Unsigned Addition</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('signedaddition') }}>Signed Addition</a>\r\n                    <a class=\"dropdown-item\" href={{ url_for('rgb') }}>RGB</a>\r\n                </div>\r\n            </li>\r\n            <!-- stub is shown using the name of the route -->\r\n\r\n        </div>\r\n\r\n\r\n        <meta charset=\"utf-8\">\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">\r\n        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\r\n        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>\r\n        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\"></script>\r\n    </div>\r\n\r\n\r\n</nav>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/layouts/navbar.html b/templates/layouts/navbar.html
+--- a/templates/layouts/navbar.html	(revision bf03c9823d26c8dc4e646d25e045b173fa0033e4)
++++ b/templates/layouts/navbar.html	(date 1635803910231)
+@@ -8,7 +8,7 @@
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav">
+             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+-            <a class="nav-link" href={{ url_for('index') }}>Home</a>
++            <a class="nav-link" href={{ url_for('home') }}>Home</a>
+             <a class="nav-link" href={{ url_for('information') }}>Information</a>
+             <a class="nav-link" href={{ url_for('facts') }}>Interesting Facts</a>
+             <a class="nav-link" href={{ url_for('purchasing') }}>Purchasing Corn</a>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3f941245-da0e-46a6-b133-3c9c685963d2\" name=\"Changes\" comment=\"api\">\r\n      <change beforePath=\"$PROJECT_DIR$/API/cornapi.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/API/cornapi.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/cornapi.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/cornapi.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MacroExpansionManager\">\r\n    <option name=\"directoryName\" value=\"ch8t7jgd\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"20COaNX2SSLOnNMYbnyAE8onZ6v\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Project\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\byron\\IdeaProjects\\flask_portfolio\" />\r\n      <recent name=\"C:\\Users\\byron\\IdeaProjects\\flask_portfolio\\templates\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"PythonConfigurationType\" factoryName=\"Python\">\r\n      <module name=\"flask_portfolio\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"true\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"flask_portfolio\" type=\"PythonConfigurationType\" factoryName=\"Python\">\r\n      <module name=\"flask_portfolio\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\byron\\AppData\\Local\\Programs\\Python\\Python39\\python.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3f941245-da0e-46a6-b133-3c9c685963d2\" name=\"Changes\" comment=\"\" />\r\n      <created>1635545173916</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1635545173916</updated>\r\n      <workItem from=\"1635545176687\" duration=\"2036000\" />\r\n      <workItem from=\"1635721012254\" duration=\"3645000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"api\">\r\n      <created>1635724122973</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1635724122973</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"api\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"api\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/flask_portfolio$flask_portfolio.coverage\" NAME=\"flask_portfolio Coverage Results\" MODIFIED=\"1635724679172\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bf03c9823d26c8dc4e646d25e045b173fa0033e4)
++++ b/.idea/workspace.xml	(date 1635803854081)
+@@ -2,9 +2,14 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="3f941245-da0e-46a6-b133-3c9c685963d2" name="Changes" comment="api">
+-      <change beforePath="$PROJECT_DIR$/API/cornapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/cornapi.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/cornapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/cornapi.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/templates/app.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/templates/style.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/templates/tictactoe.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -14,8 +19,9 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="HTML File" />
+         <option value="Python Script" />
++        <option value="HTML File" />
++        <option value="JavaScript File" />
+       </list>
+     </option>
+   </component>
+@@ -42,9 +48,11 @@
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="project.structure.last.edited" value="Project" />
+     <property name="project.structure.proportion" value="0.0" />
+@@ -112,7 +120,8 @@
+       <option name="presentableId" value="Default" />
+       <updated>1635545173916</updated>
+       <workItem from="1635545176687" duration="2036000" />
+-      <workItem from="1635721012254" duration="3645000" />
++      <workItem from="1635721012254" duration="4476000" />
++      <workItem from="1635800654991" duration="3169000" />
+     </task>
+     <task id="LOCAL-00001" summary="api">
+       <created>1635724122973</created>
+@@ -121,7 +130,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1635724122973</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="api">
++      <created>1635724879225</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1635724879225</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -148,6 +164,6 @@
+     <select />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1635724679172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
++    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1635803772166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1635802604967)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1635802604967)
+@@ -0,0 +1,22 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="myValues">
++        <value>
++          <list size="8">
++            <item index="0" class="java.lang.String" itemvalue="nobr" />
++            <item index="1" class="java.lang.String" itemvalue="noembed" />
++            <item index="2" class="java.lang.String" itemvalue="comment" />
++            <item index="3" class="java.lang.String" itemvalue="noscript" />
++            <item index="4" class="java.lang.String" itemvalue="embed" />
++            <item index="5" class="java.lang.String" itemvalue="script" />
++            <item index="6" class="java.lang.String" itemvalue="play-area" />
++            <item index="7" class="java.lang.String" itemvalue="block" />
++          </list>
++        </value>
++      </option>
++      <option name="myCustomValuesEnabled" value="true" />
++    </inspection_tool>
++  </profile>
++</component>
+\ No newline at end of file
+diff --git a/templates/index.html b/templates/home.html
+rename from templates/index.html
+rename to templates/home.html
