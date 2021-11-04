@@ -77,8 +77,8 @@
     <h2>Click on the image below to select your move:<h2>
         <div class="action">
             <input class="options" type="image" src="/static/assets/cornseed.png" value="Rock" />
-            <input class="options" type="image" src="/static/assets/cornleaves.png" value="Paper" />
-            <input class="options" type="image" src="/static/assets/cornsilk.png" value="Scissors" />
+            <input class="options" type="image" src="/static/assets/cornsilk.png" value="Paper" />
+            <input class="options" type="image" src="/static/assets/cornleaves.png" value="Scissors" />
         </div>
 </div>
 <script>
@@ -125,7 +125,7 @@
                 cScore++;
             }
         }
-        //Check for Paper
+
         else if (pInput === "Paper") {
             if (cInput === "Rock") {
                 alert(`${currentMatch} = You Win`);
@@ -135,7 +135,7 @@
                 cScore++;
             }
         }
-        //Check for Scissors
+
         else {
             if (cInput === "Paper") {
                 alert(`${currentMatch} = You Win`);

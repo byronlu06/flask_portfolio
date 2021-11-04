@@ -24,6 +24,10 @@ def index():
 def F2():
     return render_template("Feature 2.html")
 
+@app.route('/Feature3/')
+def F3():
+    return render_template("Feature 3.html")
+
 # connects /kangaroos path to render aboutus.html
 @app.route('/Mini Lab Stuff/')
 def Minilabs():
