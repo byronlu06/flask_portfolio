@@ -50,7 +50,7 @@ def aboutus():
 @app.route('/Waxy Corn/')
 def WaxyCorn():
     return render_template("CornInfo/Waxy Corn.html")
-
+ 
 
 @app.route('/Homepages/')
 def HomePages():
