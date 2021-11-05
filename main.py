@@ -1,19 +1,16 @@
-from flask import Flask, render_template, request
-from image import image_data
 from pathlib import Path
+
 import requests
+from flask import Flask, render_template, request
+
+from image import image_data
+from templates.api.cornapi import api_bp
+
 from flask import Blueprint
-
-main = Blueprint('main', __name__)
-
 
 # create a Flask instance
 app = Flask(__name__)
-app_starter = Blueprint('starter', __name__,
-                        url_prefix='/starter',
-                        template_folder='templates',
-                        static_folder='static',
-                        static_url_path='assets')
+
 
 # connects default URL to render index.html
 @app.route('/')
@@ -173,15 +170,17 @@ if __name__ == "__main__":
 
 @app.route('/corn', methods=['GET', 'POST'])
 def corn():
-    url = "http://localhost:5000/corn"
+    url = "http://localhost:5000/api/corn"
     response = requests.request("GET", url)
-    return render_template("corn.html", corn=response.json())
+    return render_template("layouts/corn.html", corn=response.json())
 
 @app.route('/corns/', methods=['GET', 'POST'])
 def corns():
-    url = "http://localhost:5000/corns"
+    url = "http://localhost:5000/api/corns"
     response = requests.request("GET", url)
-    return render_template("corns.html", corns=response.json())
+    return render_template("layouts/corns.html", corns=response.json())
+
+app.register_blueprint(api_bp)
 
 if __name__ == "__main__":
     # runs the application on the repl development server
