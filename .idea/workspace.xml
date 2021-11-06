@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f941245-da0e-46a6-b133-3c9c685963d2" name="Changes" comment="fixed ians stuff">
-      <change afterPath="$PROJECT_DIR$/templates/api/cornslistapi.py" afterDir="false" />
+    <list default="true" id="3f941245-da0e-46a6-b133-3c9c685963d2" name="Changes" comment="api">
+      <change afterPath="$PROJECT_DIR$/static/assets/amazon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/costco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/ralphs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/sprouts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/target.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/walmart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/walmart2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dentcorn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/flintcorn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/flourcorn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/podcorn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sweetcorn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/cornapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/cornapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cornapi.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/corn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/corn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/corns.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/corns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Waxycorn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Waxycorn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/information.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/purchasing.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/purchasing.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -134,7 +145,10 @@
       <workItem from="1635899513775" duration="1897000" />
       <workItem from="1635918578354" duration="1196000" />
       <workItem from="1635973249405" duration="2625000" />
-      <workItem from="1636060844648" duration="8334000" />
+      <workItem from="1636060844648" duration="8629000" />
+      <workItem from="1636147284755" duration="2029000" />
+      <workItem from="1636156622378" duration="1702000" />
+      <workItem from="1636214269329" duration="6162000" />
     </task>
     <task id="LOCAL-00001" summary="api">
       <created>1635724122973</created>
@@ -164,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636068950046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="api">
+      <created>1636085958669</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636085958669</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,16 +205,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="api" />
     <MESSAGE value="corn game" />
     <MESSAGE value="fixed ians stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed ians stuff" />
+    <MESSAGE value="api" />
+    <option name="LAST_COMMIT_MESSAGE" value="api" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1636084519067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1636222739318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

@@ -137,6 +137,26 @@ def signedaddition():
 def Waxycorn():
     return render_template("Waxycorn.html")
 
+@app.route('/dentcorn/')
+def dentcorn():
+    return render_template("dentcorn.html")
+
+@app.route('/flintcorn/')
+def flintcorn():
+    return render_template("flintcorn.html")
+
+@app.route('/sweetcorn/')
+def sweetcorn():
+    return render_template("sweetcorn.html")
+
+@app.route('/flourcorn/')
+def flourcorn():
+    return render_template("flourcorn.html")
+
+@app.route('/podcorn/')
+def podcorn():
+    return render_template("podcorn.html")
+
 @app.route('/information/')
 def information():
     return render_template("information.html")

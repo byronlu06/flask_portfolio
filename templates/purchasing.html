@@ -1,19 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
 {% include "layouts/navbar.html" %}
 
-<title> Purchasing Corn</title>
+<head>
+    <h1 style="color:black;text-align:center; font-family: 'Consolas',serif;font-size: 60px" >Buy Corn From: </h1>
+    <style>
+        :root{
+            --white: whitesmoke;
+            --black: black;
+            --grey: grey;
+        }
 
-<a href="https://www.white-buffalo-trading.com/store/c8/Asian_Waxy_Corn.html"> Buy this tuf</a>
+        html,body {
+            background: url('/static/assets/Cornbackground.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .dark-mode {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        h1{
+            font-size: 5em;
+        }
+
+        a {
+            color: midnightblue;
+        }
+
+        .fa{
+            font-size: 3em;
+            letter-spacing: 1em;
+            transition: all .2s;
+            color: white;
+        }
+
+        .fa:hover{
+            transform: translateY(10px);
+        }
+
+        .fa-youtube-play:hover{
+            color: #cc0000;
+        }
+
+        .fa-twitter:hover{
+            color: #1da1f2;
+        }
+
+        .fa-github:hover{
+            color: #000000;
+        }
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+            color: white;
+            font-size: 2.5em;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .row{
+            margin: auto;
+        }
+
+        .shape{
+            text-align:center;
+            background-color:black;
+            width:500px;
+            height:8px;
+            line-height:60px;
+            color:white;
+            margin:20px auto;
+            position:relative;
+            top: -20px
+        }
+        .shape2{
+            text-align:center;
+            background-color:black;
+            width:30px;
+            height:30px;
+            line-height:30px;
+            color:black;
+            margin:20px auto;
+            position:relative;
+            transform: rotate(45deg);
+            left: 250px ;
+            top: -60px;
+        }
+        .shape3{
+            text-align:center;
+            background-color:black;
+            width:30px;
+            height:30px;
+            line-height:30px;
+            color:black;
+            margin:20px auto;
+            position:relative;
+            transform: rotate(45deg);
+            left: -259px ;
+            top: -110px;
+        }
+        img.center {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<table class="table">
+    </tr>
+    <td> <a href="https://www.walmart.com/ip/Fresh-Corn-on-the-Cob/44391430"><img class="center" src="/static/assets/walmart2.png"  width="400px" height="200px" alt="32"></a> </td>
+    <td> <a href="https://www.ralphs.com/p/corn-on-the-cob/0000000004590?fulfillment=PICKUP"><img class="center" src="/static/assets/ralphs.png" width="400px" height="200px" alt="32"></a> </td>
+    <td> <a href="https://www.target.com/p/sweet-corn-4pk-package/-/A-14919033#lnk=sametab"><img class="center" src="/static/assets/target.png" width="400px" height="200px" alt="32"></a> </td>
+    </tr>
+    </tr>
+    <td> <a href="https://www.costco.com/del-monte-whole-kernel-corn%2c-15.25-oz%2c-12-count.product.100443694.html"><img class="center" src="/static/assets/costco.png" width="400px" height="200px" alt="32"></a> </td>
+    <td> <a href="https://www.amazon.com/Bi-color-White-Corn-Tray-Pack/dp/B00E3JAP5Y/ref=sr_1_3_0o_fs?keywords=corn&qid=1636067902&qsid=138-7077979-0009264&sr=8-3&sres=B074J6RKQJ%2CB00E3JAP5Y%2CB000RPXSNY%2CB07WSBWHMS%2CB07V7K8WX6%2CB074H6YNGS%2CB000V9YYAW%2CB074H7KL69%2CB00099XPOU%2CB000RA9R7K%2CB074H81LWW%2CB0147RUUXS%2CB000REQBZW%2CB00CIJR5VS%2CB06XDL5FW1%2CB000VA49CY%2CB0044R36OW%2CB07K8RN9D7%2CB001ET703G%2CB01NCPW3FX&srpt=VEGETABLE"><img class="center" src="/static/assets/amazon.png" width="400px" height="200px" alt="32"></a> </td>
+    <td> <a href="https://shop.sprouts.com/search?search_term=corn&category_id=1"><img class="center" src="/static/assets/sprouts.png" width="400px" height="200px" alt="32"></a> </td>
+    </tr>
+</table>
+
+
 <style>
-html, body{
-margin: 0;
-height: 100%;
-animation: fadein 2s;
--moz-animation: fadein 2s; /* Firefox */
--webkit-animation: fadein 2s; /* Safari and Chrome */
--o-animation: fadein 2s; /* Opera */
-background-image: url('/static/assets/Cornbackground.jpg');
-background-position:center;
-background-repeat:no-repeat;
-background-size: cover;
-
-</style>
+    html, body{
+        margin: 0;
+        height: 100%;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+        background-color: var(--purple);
+        color: var(--black);
+        background-image: url('/static/assets/Cornbackground.jpg');
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size: cover;
