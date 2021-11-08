@@ -11,6 +11,15 @@
 ### [Team Scrum Board](https://github.com/byronlu06/flask_portfolio/projects/1)
 ### [Team Insight Graphs](https://github.com/byronlu06/flask_portfolio/graphs/contributors)
 ### [Website Prototype](https://www.figma.com/file/2Be2nAm0tM2Fkvxm0iZiVR/Website-Prototype?node-id=0%3A1)
+## Week 1 & 2
+
+| Assignee | Requirements             | Evidence                                                                                                |
+| -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Chase | setup intellij, python, work on greeting   |  |
+| Byron      | setup intellij, python, work on greeting|                                                                                              |
+| Ian   |   work on greeting     |  |
+| Michael   |  setup intellij, python, work on greeting     |  |
+
 ## Week 3
 
 | Assignee | Requirements             | Evidence                                                                                                |
