@@ -11,6 +11,24 @@
 ### [Team Scrum Board](https://github.com/byronlu06/flask_portfolio/projects/1)
 ### [Team Insight Graphs](https://github.com/byronlu06/flask_portfolio/graphs/contributors)
 ### [Website Prototype](https://www.figma.com/file/2Be2nAm0tM2Fkvxm0iZiVR/Website-Prototype?node-id=0%3A1)
+## Week 3
+
+| Assignee | Requirements             | Evidence                                                                                                |
+| -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Chase | prototype layout    |  |
+| Byron      | prototype layout |                                                                                              |
+| Ian   |   design on layout       |  |
+| Michael   |  assistance on layout     |  |
+
+## Week 4
+
+| Assignee | Requirements             | Evidence                                                                                                |
+| -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Chase | javascript and issues    |  |
+| Byron      | template design doc and binary |                                                                                              |
+| Ian   |   video presentation       |  |
+| Michael   |  video presentation      |  |
+
 ## Week 5
 
 | Assignee | Requirements             | Evidence                                                                                                |
@@ -63,3 +81,11 @@
 | Byron Lu   | Individual work | |
 | Michael Sanborn | Individual work|  |
 
+## Week 10 & 11 
+
+| Assignee | Requirements | Evidence                                                                                                                                             
+| -------- | --------------------------- | ------------------------- |
+| Ian Hua    |  work on feature and presentation |  |                   
+| Chase Ott   | work on feature and presentation  | |
+| Byron Lu   | work on feature and presentation  | |
+| Michael Sanborn | work on feature and presentation|  |
