@@ -15,8 +15,8 @@
 
 | Assignee | Requirements             | Evidence                                                                                                |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Chase | setup intellij, python, work on greeting   |  |
-| Byron      | setup intellij, python, work on greeting|                                                                                              |
+| Chase | setup intellij, python, work on greeting   | https://github.com/byronlu06/flask_portfolio/blob/main/templates/ChaseHomepage.html |
+| Byron      | setup intellij, python, work on greeting|    https://github.com/byronlu06/flask_portfolio/blob/main/templates/byronhomepage.html                                                                                          |
 | Ian   |   work on greeting     |  |
 | Michael   |  setup intellij, python, work on greeting     |  |
 
@@ -34,7 +34,7 @@
 | Assignee | Requirements             | Evidence                                                                                                |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
 | Chase | javascript and issues    |  |
-| Byron      | template design doc and binary |                                                                                              |
+| Byron      | template design doc and binary |  https://github.com/byronlu06/flask_portfolio/blob/main/templates/binary.html https://github.com/byronlu06/flask_portfolio/blob/main/templates/binary2.html                                                                                            |
 | Ian   |   video presentation       |  |
 | Michael   |  video presentation      |  |
 
@@ -42,9 +42,9 @@
 
 | Assignee | Requirements             | Evidence                                                                                                |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Chase | backend/frontend RGB     |  |
+| Chase | backend/frontend RGB     | https://github.com/byronlu06/flask_portfolio/blob/main/templates/rgb.html |
 | Byron      | fix file not found error |                                                                                              |
-| Byron    | Work on HomePage         |  |
+| Byron    | Work on HomePage         | https://github.com/byronlu06/flask_portfolio/blob/main/templates/Homepages.html |
 
 
 ## Week 6
@@ -66,19 +66,19 @@
 | Assignee | Requirements                                                                        | Evidence                                                                                                                                                                                                                                                             |
 | -------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chase Ott    | Logic Gates    |                                                                                                                                                                 |
-| Byron Lu     | Unsigned Addition       |                                                          |
+| Byron Lu     | Unsigned Addition       |  https://github.com/byronlu06/flask_portfolio/blob/main/templates/unsignedaddition.html                                                        |
 | Chase Ott   | Multiply and Divide Shift |                                   |
 | Chase Ott   | Extend/Switch ASCII to Unicode |  |
-| Byron Lu | Color Codes | |
-| Byron Lu | Signed Addition | |
+| Byron Lu | Color Codes | https://github.com/byronlu06/flask_portfolio/blob/main/templates/colorcodes.html |
+| Byron Lu | Signed Addition | https://github.com/byronlu06/flask_portfolio/blob/main/templates/signedaddition.html |
 
 ## Week 8
 
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
 | Ian Hua    | Work on Project   |  |                   
-| Chase Ott   | Fixing color codes / overall website | |
-| Byron Lu   | homepage / overall website | |
+| Chase Ott   | Fixing color codes / overall website | https://github.com/byronlu06/flask_portfolio/blob/main/templates/colorcodes.html |
+| Byron Lu   | homepage / overall website | https://github.com/byronlu06/flask_portfolio/blob/main/templates/Homepages.html |
 | Michael Sanborn | Work on project|  |
 
 ## Week 9
@@ -94,7 +94,7 @@
 
 | Assignee | Requirements | Evidence                                                                                                                                             
 | -------- | --------------------------- | ------------------------- |
-| Ian Hua    |  work on feature and presentation |  |                   
-| Chase Ott   | work on feature and presentation  | |
-| Byron Lu   | work on feature and presentation  | |
+| Ian Hua    |  work on feature and presentation | https://github.com/byronlu06/flask_portfolio/blob/main/templates/Feature%203.html |                   
+| Chase Ott   | work on feature and presentation  | https://github.com/byronlu06/flask_portfolio/blob/main/templates/Feature%201.html |
+| Byron Lu   | work on feature and presentation  | https://github.com/byronlu06/flask_portfolio/blob/main/templates/Feature%202.html |
 | Michael Sanborn | work on feature and presentation|  |
