@@ -24,10 +24,10 @@
 
 | Assignee | Requirements             | Evidence                                                                                                |
 | -------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Chase | prototype layout    |  
-| Byron      | prototype layout |                                                                                              
-| Ian   |   design on layout       |  
-| Michael   |  assistance on layout     |  
+| Chase | prototype layout    |  https://docs.google.com/document/d/1z49w00x3-VRcEwY7eDKDqd4DucxRxvT6nktqPxquRo0/edit
+| Byron      | prototype layout |    https://docs.google.com/document/d/1z49w00x3-VRcEwY7eDKDqd4DucxRxvT6nktqPxquRo0/edit                                                                                          
+| Ian   |   design on layout       |  https://docs.google.com/document/d/1z49w00x3-VRcEwY7eDKDqd4DucxRxvT6nktqPxquRo0/edit
+| Michael   |  assistance on layout     |  https://docs.google.com/document/d/1z49w00x3-VRcEwY7eDKDqd4DucxRxvT6nktqPxquRo0/edit
 
 ## Week 4
 
